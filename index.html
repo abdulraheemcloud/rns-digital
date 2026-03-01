@@ -1,121 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RNS Digital | Professional Web Solutions</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RNS Digital – Professional web solutions for small businesses. Get a conversion-focused website, Google SEO, and online growth strategy." />
+  <title>RNS Digital | Professional Web Solutions for Small Businesses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<header class="navbar">
-<div class="container nav-container">
-<h2>RNS Digital</h2>
-<a href="#contact" class="nav-btn">Get Started</a>
-</div>
-</header>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="logo-mark">RN</div>
+          <span class="logo-text">RNS <span>Digital</span></span>
+        </a>
 
-<section class="hero">
-<div class="container">
-<h1>Grow Your Business Online</h1>
-<p>Professional websites and Google optimization to generate real customer inquiries.</p>
-<a href="#pricing" class="btn-primary">View Plans</a>
-</div>
-</section>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://wa.me/919XXXXXXXXX" class="nav-cta" target="_blank">Get Started →</a></li>
+        </ul>
 
-<section class="features-section">
-<div class="container">
-<h2>Why Choose RNS Digital?</h2>
-<div class="features">
-<div class="feature-box">
-<h3>Conversion-Focused Design</h3>
-<p>Websites built to convert visitors into inquiries.</p>
-</div>
-<div class="feature-box">
-<h3>Local SEO Optimization</h3>
-<p>Improve your visibility on Google search results.</p>
-</div>
-<div class="feature-box">
-<h3>Growth Strategy</h3>
-<p>Structured process to help your business grow online.</p>
-</div>
-</div>
-</div>
-</section>
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-<section id="pricing" class="pricing">
-<div class="container">
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-badge">Trusted by Small Businesses Across India</div>
+          <h1>
+            Your Business Deserves a<br>
+            <span class="highlight">Powerful</span> Online Presence
+          </h1>
+          <p class="hero-subtitle">
+            We build high-converting websites and Google-optimized digital strategies that generate real customer inquiries — not just clicks.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn-primary">
+              View Our Plans
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#why" class="btn-ghost">Why RNS Digital</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong><span data-target="150" data-suffix="+">0+</span></strong>
+              <span>Websites Delivered</span>
+            </div>
+            <div class="stat-item">
+              <strong><span data-target="98" data-suffix="%">0%</span></strong>
+              <span>Client Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <strong><span data-target="5" data-suffix=" Days">0 Days</span></strong>
+              <span>Avg Delivery</span>
+            </div>
+          </div>
+        </div>
 
-<h2>Our Plans</h2>
-<p class="pricing-sub">Choose the right plan for your business growth</p>
+        <!-- Right Visual Card -->
+        <div class="hero-visual">
+          <div class="floating-card">
+            <div class="card-header-label">📈 Business Growth Dashboard</div>
+            <div class="mini-stat-row">
+              <div class="mini-stat">
+                <span class="num">4.8×</span>
+                <span class="lbl">More Inquiries</span>
+              </div>
+              <div class="mini-stat">
+                <span class="num">↑ 78%</span>
+                <span class="lbl">Google Visibility</span>
+              </div>
+            </div>
+            <div class="chart-bar-row">
+              <div class="bar" style="height:30%"></div>
+              <div class="bar" style="height:45%"></div>
+              <div class="bar" style="height:38%"></div>
+              <div class="bar active" style="height:60%"></div>
+              <div class="bar active" style="height:72%"></div>
+              <div class="bar active" style="height:85%"></div>
+              <div class="bar active" style="height:95%"></div>
+            </div>
+            <div class="chart-label">Website performance after launch</div>
+            <div class="card-footer-note">
+              <div class="green-dot"></div>
+              <span>Live — Your customers are searching for you right now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="pricing-cards">
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">Built for Business Growth,<br>Not Just Pretty Looks</h2>
+        <p class="section-subtitle">Every decision we make is focused on one thing — helping your business get more customers online.</p>
+      </div>
 
-<!-- Basic -->
-<div class="card basic">
-<h3>Basic Plan</h3>
-<p class="price">₹4,999</p>
-<p class="small-text">1st Year All-Inclusive</p>
-<ul>
-<li>✔ 1-Page Professional Website</li>
-<li>✔ Mobile Responsive Design</li>
-<li>✔ WhatsApp Integration</li>
-<li>✔ Basic SEO Setup</li>
-<li>✔ Google Business Setup</li>
-<li>✔ 1-Year Domain Included</li>
-<li>✔ 7 Days Support</li>
-</ul>
-<a href="#contact" class="btn-outline">Get Started</a>
-</div>
+      <div class="why-grid" data-stagger>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Conversion-Focused Design</h3>
+          <p>Every element on your website is strategically placed to turn visitors into paying customers — not just admire the design.</p>
+        </div>
 
-<!-- Growth -->
-<div class="card growth">
-<span class="badge">Most Recommended</span>
-<h3>Growth Plan</h3>
-<p class="price">₹8,499</p>
-<p class="small-text">1st Year All-Inclusive</p>
-<ul>
-<li>✔ 3–5 Page Professional Website</li>
-<li>✔ Advanced On-Page SEO</li>
-<li>✔ Local Keyword Optimization</li>
-<li>✔ Google Business Optimization</li>
-<li>✔ Lead Tracking Setup</li>
-<li>✔ Image & Speed Optimization</li>
-<li>✔ 1-Year Domain Included</li>
-<li>✔ 30 Days Support</li>
-</ul>
-<a href="#contact" class="btn-primary">Start My Website</a>
-</div>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#2563eb" stroke-width="2"/>
+              <path d="m21 21-4.35-4.35" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Local SEO Optimization</h3>
+          <p>We optimize your site and Google Business Profile so local customers find you first — above your competitors.</p>
+        </div>
 
-</div>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Fast Delivery — 5 to 7 Days</h3>
+          <p>No weeks of waiting. We deliver production-ready, live websites in as little as 5–7 working days so you start growing faster.</p>
+        </div>
 
-<div class="renewal">
-<p><strong>From 2nd Year:</strong> Domain Renewal Approx ₹1,000 / Year</p>
-</div>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="2" width="14" height="20" rx="2" stroke="#2563eb" stroke-width="2"/>
+              <path d="M9 7h6M9 11h6M9 15h4" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Mobile-First Responsive</h3>
+          <p>Over 80% of your customers browse on phones. Your site will look and function perfectly on every device, every screen size.</p>
+        </div>
 
-<div class="subscription">
-<h3>Optional Monthly Support (Not Compulsory)</h3>
-<p><strong>Basic Clients:</strong> ₹499 / Month</p>
-<p><strong>Growth Clients:</strong> ₹999 / Month</p>
-<p class="small-text">Includes content updates, SEO check & support assistance.</p>
-</div>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12l2 2 4-4" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 12c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8c1.85 0 3.555.628 4.908 1.672" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden fees, no surprises. You know exactly what you pay from day one — including clear domain renewal costs from year 2.</p>
+        </div>
 
-</div>
-</section>
+        <div class="why-card fade-up">
+          <div class="why-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Dedicated Support</h3>
+          <p>You're never left alone. Our team is available via WhatsApp for quick answers and guidance — even after your site goes live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="contact">
-<div class="container">
-<h2>Let’s Build Your Online Presence</h2>
-<p>Ready to grow your business?</p>
-<a href="https://wa.me/91XXXXXXXXXX" class="btn-primary">Chat on WhatsApp</a>
-</div>
-</section>
+  <!-- ===== PROCESS ===== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-tag">Our Process</div>
+        <h2 class="section-title">Your Website Live in 4 Simple Steps</h2>
+        <p class="section-subtitle">A clear, structured process — from your first message to your site going live and bringing in leads.</p>
+      </div>
 
-<footer>
-<p>© 2026 RNS Digital. All Rights Reserved.</p>
-</footer>
+      <div class="process-steps">
+        <div class="step-card fade-up">
+          <div class="step-num">1</div>
+          <h3>Discovery Call</h3>
+          <p>We understand your business, your goals, and your target customers in a quick WhatsApp or call consultation.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">2</div>
+          <h3>Design & Build</h3>
+          <p>Our team designs and develops your conversion-optimized website based on your brand and business needs.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">3</div>
+          <h3>Review & Revise</h3>
+          <p>You review the design, request changes, and we polish every detail until you're 100% satisfied.</p>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-num">4</div>
+          <h3>Launch & Grow</h3>
+          <p>We go live, set up Google Business, and activate your SEO foundation. Your growth journey starts here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-tag">Pricing Plans</div>
+        <h2 class="section-title">Simple, All-Inclusive Pricing</h2>
+        <p class="section-subtitle">Everything your business needs to succeed online — with no hidden costs and no technical headaches.</p>
+      </div>
+
+      <div class="pricing-cards">
+        <!-- BASIC PLAN -->
+        <div class="plan-card basic fade-up">
+          <div class="plan-name">Basic Plan</div>
+          <div class="plan-price">₹4,999 <span>one-time</span></div>
+          <div class="plan-note">1st Year All-Inclusive · Domain + Hosting + Setup</div>
+          <ul class="plan-features">
+            <li><div class="check-icon"></div>1-Page Professional Website</li>
+            <li><div class="check-icon"></div>Mobile Responsive Design</li>
+            <li><div class="check-icon"></div>WhatsApp Button Integration</li>
+            <li><div class="check-icon"></div>Basic On-Page SEO Setup</li>
+            <li><div class="check-icon"></div>Google Business Profile Setup</li>
+            <li><div class="check-icon"></div>1-Year Domain Included</li>
+            <li><div class="check-icon"></div>Contact Form</li>
+            <li><div class="check-icon"></div>7 Days Post-Launch Support</li>
+          </ul>
+          <a href="https://wa.me/917550268805" class="btn-plan outline" target="_blank">Get Started →</a>
+        </div>
+
+        <!-- GROWTH PLAN -->
+        <div class="plan-card growth fade-up">
+          <div class="recommended-badge">⭐ Most Recommended</div>
+          <div class="plan-name">Growth Plan</div>
+          <div class="plan-price">₹8,499 <span>one-time</span></div>
+          <div class="plan-note">1st Year All-Inclusive · Domain + Hosting + Full SEO</div>
+          <ul class="plan-features">
+            <li><div class="check-icon"></div>3–5 Page Professional Website</li>
+            <li><div class="check-icon"></div>Advanced On-Page SEO</li>
+            <li><div class="check-icon"></div>Local Keyword Optimization</li>
+            <li><div class="check-icon"></div>Google Business Optimization</li>
+            <li><div class="check-icon"></div>Lead Tracking & Analytics Setup</li>
+            <li><div class="check-icon"></div>Image & Speed Optimization</li>
+            <li><div class="check-icon"></div>1-Year Domain Included</li>
+            <li><div class="check-icon"></div>WhatsApp + Contact Form</li>
+            <li><div class="check-icon"></div>30 Days Post-Launch Support</li>
+            <li><div class="check-icon"></div>1 Free Revision Round</li>
+          </ul>
+          <a href="https://wa.me/917550268805" class="btn-plan solid" target="_blank">Start My Website →</a>
+        </div>
+      </div>
+
+      <!-- Renewal Note -->
+      <div class="pricing-footer fade-up">
+        <div class="renewal-note">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2v10l4 2" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="10" stroke="#2563eb" stroke-width="2"/></svg>
+          <p><strong>From 2nd Year:</strong> Domain Renewal is approx. <strong>₹1,000 / year</strong> — affordable and fully transparent. No surprises.</p>
+        </div>
+      </div>
+
+      <!-- Optional Subscription -->
+      <div class="subscription-box fade-up">
+        <h3>🔄 Optional Monthly Support Plans</h3>
+        <p class="sub-note">Not compulsory — available if you want ongoing updates, SEO checks & priority assistance.</p>
+        <div class="sub-plans">
+          <div class="sub-plan">
+            <div class="plan-type">Basic Clients</div>
+            <div class="sub-price">₹499 <span>/ month</span></div>
+            <div class="sub-desc">Content updates + SEO check + WhatsApp support</div>
+          </div>
+          <div class="sub-plan">
+            <div class="plan-type">Growth Clients</div>
+            <div class="sub-price">₹999 <span>/ month</span></div>
+            <div class="sub-desc">Priority support + monthly SEO report + content edits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPARISON TABLE ===== -->
+  <section class="comparison-section" id="compare">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-tag">Plan Comparison</div>
+        <h2 class="section-title">Basic vs Growth — Side by Side</h2>
+        <p class="section-subtitle">See exactly what's included in each plan so you can make the right choice for your business.</p>
+      </div>
+
+      <div class="comp-table-wrap fade-up">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="th-plan-name">Basic — ₹4,999</th>
+              <th class="th-plan-name">Growth — ₹8,499 ⭐</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Number of Pages</td><td><span class="comp-val">1 Page</span></td><td><span class="comp-val">3–5 Pages</span></td></tr>
+            <tr><td>Mobile Responsive Design</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>WhatsApp Button Integration</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Basic SEO Setup</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Advanced On-Page SEO</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Local Keyword Optimization</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Google Business Setup</td><td><span class="yes">✓</span></td><td><span class="yes">✓ Optimized</span></td></tr>
+            <tr><td>Lead Tracking & Analytics</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Image & Speed Optimization</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>1-Year Domain Included</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+            <tr><td>Post-Launch Support</td><td><span class="comp-val">7 Days</span></td><td><span class="comp-val">30 Days</span></td></tr>
+            <tr><td>Revision Round</td><td><span class="no">✗</span></td><td><span class="yes">✓ 1 Free Round</span></td></tr>
+            <tr><td>Domain Renewal (From Year 2)</td><td><span class="comp-val">~₹1,000/yr</span></td><td><span class="comp-val">~₹1,000/yr</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner fade-up">
+        <div class="section-tag" style="background:rgba(37,99,235,0.25);color:#93c5fd;">Ready to Grow?</div>
+        <h2>Let's Build Your Business Online — Starting Today</h2>
+        <p>Message us on WhatsApp and get a free consultation. No pressure, no jargon — just real growth advice for your business.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/917550268805?text=Hi%20RNS%20Digital!%20I%20want%20to%20know%20more%20about%20your%20plans." class="btn-wa" target="_blank">
+            <span class="wa-icon">💬</span>
+            Chat on WhatsApp
+          </a>
+          <a href="tel:+917550268805" class="btn-ghost">📞 Call Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#" class="footer-logo">
+          <div class="logo-mark">RN</div>
+          RNS Digital
+        </a>
+        <p>© 2026 RNS Digital. All Rights Reserved. Crafted with ❤ for small businesses.</p>
+        <ul class="footer-links">
+          <li><a href="#why">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="https://wa.me/917550268805" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/917550268805?text=Hi%20RNS%20Digital!%20I'm%20interested%20in%20your%20services." class="wa-float" target="_blank" title="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
