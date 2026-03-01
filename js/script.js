@@ -1,113 +1,80 @@
-/* ============================================================
-   RNS Digital — Main Script v2.0
-   ============================================================ */
+/* ===================================
+   RNS Digital – Main Script
+   =================================== */
 
-// ── Load Google Fonts async ──
-(function(){
-  var l = document.createElement('link');
-  l.rel = 'stylesheet';
-  l.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Outfit:wght@400;500;600;700;800&display=swap';
-  document.head.appendChild(l);
-})();
+document.addEventListener('DOMContentLoaded', function () {
 
-// ── Enable scroll animations ──
-document.documentElement.classList.add('js-ready');
-
-// ── Navbar scroll effect ──
-var navbar = document.getElementById('navbar');
-window.addEventListener('scroll', function(){
-  if(window.scrollY > 60) navbar.classList.add('scrolled');
-  else navbar.classList.remove('scrolled');
-}, { passive: true });
-
-// ── Hamburger menu ──
-var hamburger = document.getElementById('hamburger');
-var navMenu   = document.getElementById('navMenu');
-
-if(hamburger && navMenu){
-  hamburger.addEventListener('click', function(){
-    navMenu.classList.toggle('open');
-    var spans = hamburger.querySelectorAll('span');
-    if(navMenu.classList.contains('open')){
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity   = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-      spans.forEach(function(s){ s.style.transform = ''; s.style.opacity = ''; });
+  // ── Active Nav Link ─────────────────
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.classList.add('active');
     }
+    if (href === 'contact.html' && link.classList.contains('nav-cta')) return;
   });
-  navMenu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      navMenu.classList.remove('open');
-      hamburger.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
-    });
-  });
-}
 
-// ── Scroll reveal ──
-var revealEls = document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window && revealEls.length){
-  var ro = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('in-view');
-        ro.unobserve(e.target);
+  // ── Mobile Nav Toggle ───────────────
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const isOpen = navLinks.classList.contains('open');
+      toggle.querySelectorAll('span')[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      toggle.querySelectorAll('span')[1].style.opacity  = isOpen ? '0' : '1';
+      toggle.querySelectorAll('span')[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  }
+
+  // ── Scroll Animations ───────────────
+  const observerOpts = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
-  revealEls.forEach(function(el){ ro.observe(el); });
-} else {
-  revealEls.forEach(function(el){ el.classList.add('in-view'); });
-}
+  }, observerOpts);
 
-// ── Animated counters ──
-function runCounter(el){
-  var target   = parseInt(el.getAttribute('data-target'), 10);
-  var suffix   = el.getAttribute('data-suffix') || '';
-  var duration = 1800;
-  var steps    = 55;
-  var step     = target / steps;
-  var current  = 0;
-  var t = setInterval(function(){
-    current += step;
-    if(current >= target){ current = target; clearInterval(t); }
-    el.textContent = Math.floor(current) + suffix;
-  }, duration / steps);
-}
-if('IntersectionObserver' in window){
-  var co = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting && !e.target.dataset.counted){
-        e.target.dataset.counted = '1';
-        runCounter(e.target);
-        co.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('[data-target]').forEach(function(el){ co.observe(el); });
-}
+  document.querySelectorAll('.wyg-card, .portfolio-card, .why-card, .process-step, .include-item, .pricing-card, .suitability-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = `opacity 0.5s ease ${i * 0.07}s, transform 0.5s ease ${i * 0.07}s`;
+    observer.observe(el);
+  });
 
-// ── Smooth scroll (same-page anchors) ──
-document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click', function(e){
-    var href = a.getAttribute('href');
-    if(href === '#') return;
-    var target = document.querySelector(href);
-    if(target){
+  // ── Contact Form ────────────────────
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      var y = target.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  });
-});
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('form-fields').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      }, 1400);
+    });
+  }
 
-// ── Active nav link highlight ──
-(function(){
-  var path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-menu a').forEach(function(a){
-    var href = a.getAttribute('href');
-    if(href && (href === path || href.endsWith(path))){
-      a.classList.add('active');
-    }
-  });
-})();
+  // ── Navbar scroll style ─────────────
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,.25)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    }, { passive: true });
+  }
+
+});
