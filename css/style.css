@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
+/* Fonts: loaded async via JS for reliability */
 
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,7 +30,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background: #f8fafc;
   color: var(--slate-900);
   line-height: 1.65;
@@ -208,7 +208,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
   font-size: clamp(36px, 4.5vw, 56px);
   color: #fff;
   line-height: 1.15;
@@ -418,7 +418,7 @@ body {
 }
 
 .section-title {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
   font-size: clamp(28px, 3.5vw, 40px);
   color: var(--slate-900);
   line-height: 1.2;
@@ -938,7 +938,7 @@ body {
 }
 
 .cta-inner h2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
   font-size: clamp(30px, 4vw, 48px);
   color: #fff;
   margin-bottom: 16px;
@@ -1066,12 +1066,17 @@ body {
 
 /* ===== ANIMATIONS ===== */
 .fade-up {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
-.fade-up.visible {
+.js-animate .fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-animate .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
