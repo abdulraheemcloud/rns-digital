@@ -3,9 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact RNS Digital for a free consultation. WhatsApp, email, or contact form — we'll respond quickly." />
-  <title>Contact – RNS Digital</title>
+  <meta name="description" content="Portfolio of demo concept websites by RNS Digital — restaurant, dental clinic, boutique, gym, tuition center, and real estate website designs." />
+  <title>Portfolio – RNS Digital</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .portfolio-full-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .portfolio-full-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .portfolio-full-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .portfolio-full-thumb {
+      height: 210px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .pf-mock {
+      width: 80%;
+      max-width: 280px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .pf-mock-bar { display: flex; gap: 4px; margin-bottom: 10px; align-items: center; }
+    .pf-dot { width: 7px; height: 7px; border-radius: 50%; }
+    .pf-dot:nth-child(1) { background:#FF5F57; }
+    .pf-dot:nth-child(2) { background:#FFBD2E; }
+    .pf-dot:nth-child(3) { background:#28C840; }
+    .pf-url { flex:1; height:7px; background:rgba(255,255,255,.08); border-radius:4px; margin-left:6px; }
+    .pf-hero { height:80px; border-radius:7px; margin-bottom:8px; display:flex; align-items:flex-end; padding:10px; }
+    .pf-line { height:5px; border-radius:3px; background:rgba(255,255,255,.5); margin-bottom:4px; }
+    .pf-line.s { width:60%; }
+    .pf-line.xs { width:40%; background:rgba(255,255,255,.3); }
+    .pf-cols { display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px; }
+    .pf-col { background:rgba(255,255,255,.06); border-radius:5px; height:36px; }
+    .pf-info { padding: 24px; }
+    .pf-meta { display:flex; align-items:center; gap:8px; margin-bottom:10px; flex-wrap:wrap; }
+    .pf-info h3 { margin-bottom:8px; font-size:1.05rem; }
+    .pf-info p { font-size:.85rem; margin-bottom:14px; }
+    .pf-tags { display:flex; gap:6px; flex-wrap:wrap; }
+
+    /* Featured card */
+    .portfolio-full-card.featured-card {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 1px rgba(26,86,219,.25), var(--shadow-md);
+    }
+    .featured-ribbon {
+      position: absolute;
+      top: 14px; right: -28px;
+      background: var(--blue);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 5px 36px;
+      transform: rotate(45deg);
+    }
+
+    /* Filter bar */
+    .filter-bar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:40px; }
+    .filter-btn {
+      font-family: var(--font-display);
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 40px;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active { background: var(--blue); color: var(--white); border-color: var(--blue); }
+  </style>
 </head>
 <body>
 
@@ -16,9 +99,9 @@
       <ul class="nav-links">
         <li><a href="why-us.html">Why Us</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
         <li><a href="process.html">Process</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="contact.html" class="nav-cta">Get Started</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -32,116 +115,179 @@
   <div class="container">
     <div class="page-header-inner">
       <div class="breadcrumb">
-        <a href="index.html">Home</a><span>/</span><span>Contact</span>
+        <a href="index.html">Home</a><span>/</span><span>Portfolio</span>
       </div>
-      <h1>Let's Talk About Your Business</h1>
-      <p>Fill the form, WhatsApp us, or send an email. We'll get back to you within a few hours on working days.</p>
+      <h1>Demo Projects &amp; Concepts</h1>
+      <p>These are concept websites we've built to demonstrate our design quality across different local business industries. Every project below is a demo — no real client data.</p>
     </div>
   </div>
 </section>
 
 <section class="section" style="background:var(--white);">
   <div class="container">
-    <div class="contact-grid">
+    <div class="notice-box mb-40 max-760">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p><strong>Transparency notice:</strong> All projects shown here are demo/concept websites created by RNS Digital. They are not live client websites. They are displayed to showcase design style, layout quality, and industry-specific approach.</p>
+    </div>
 
-      <!-- Info -->
-      <div class="contact-info">
-        <div>
-          <div class="section-label">Get in Touch</div>
-          <h2 style="margin-top:12px;">We'd Love to Hear From You</h2>
-          <p style="margin-top:12px;">Whether you have a clear brief or just a rough idea, reach out and we'll help you figure out the best path forward — no pressure.</p>
-        </div>
+    <div class="portfolio-full-grid">
 
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div>
-            <h4>WhatsApp (Preferred)</h4>
-            <p>Message us directly for a quick conversation.</p>
-            <a href="https://wa.me/917550268805?text=Hi%2C%20I'm%20interested%20in%20a%20website%20for%20my%20business." 
-               class="btn btn-primary btn-sm" style="margin-top:10px;" target="_blank">
-              Open WhatsApp Chat
-            </a>
+      <!-- 1. Restaurant -->
+      <div class="portfolio-full-card">
+        <div class="portfolio-full-thumb thumb-restaurant">
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(180,80,0,.4),rgba(100,20,0,.3));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
+            </div>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
           </div>
         </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-amber">Food &amp; Dining</span>
           </div>
-          <div>
-            <h4>Email</h4>
-            <p>Send us a detailed brief and we'll respond within 24 hours.</p>
-            <a href="mailto:hello@rnsdigital.in" style="color:var(--blue);font-weight:600;font-size:.9rem;margin-top:6px;display:inline-block;">hello@rnsdigital.in</a>
+          <h3>Demo Project – Restaurant Website</h3>
+          <p>A warm, appetite-inspiring website for a local South Indian restaurant. Features include a menu showcase, gallery, reservation/order CTA, location map, and Google Reviews integration area.</p>
+          <div class="pf-tags">
+            <span class="badge badge-navy">Web Design</span>
+            <span class="badge badge-blue">Mobile First</span>
+            <span class="badge badge-navy">Basic Plan</span>
           </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          </div>
-          <div>
-            <h4>Response Time</h4>
-            <p>We typically respond within 2–4 hours on working days (Mon–Sat, 9 AM – 7 PM IST). WhatsApp responses are usually faster.</p>
-          </div>
-        </div>
-
-        <div class="notice-box" style="margin-top:4px;">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p><strong>No sales pressure.</strong> We'll understand your needs and recommend what's genuinely right for your business — even if that means suggesting you don't need us yet.</p>
         </div>
       </div>
 
-      <!-- Form -->
-      <div class="contact-form">
-        <div id="form-fields">
-          <h3 style="margin-bottom:6px;">Send Us a Message</h3>
-          <p style="margin-bottom:28px;font-size:.875rem;">Tell us about your business and what you're looking for.</p>
-          <form id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Rajan Sharma" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone / WhatsApp</label>
-                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
-              </div>
+      <!-- 2. Dental -->
+      <div class="portfolio-full-card">
+        <div class="portfolio-full-thumb thumb-dental">
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(26,111,163,.5),rgba(15,52,96,.4));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
             </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="rajan@yourbusiness.in" />
-            </div>
-            <div class="form-group">
-              <label for="business">Business Name &amp; Type</label>
-              <input type="text" id="business" name="business" placeholder="e.g. Sri Ganesh Dental Clinic, Coimbatore" required />
-            </div>
-            <div class="form-group">
-              <label for="plan">Which Plan Are You Interested In?</label>
-              <select id="plan" name="plan">
-                <option value="">Select a plan...</option>
-                <option value="basic">Basic Plan – &#8377;7,999</option>
-                <option value="growth">Growth Plan – &#8377;14,999</option>
-                <option value="unsure">Not sure yet – need guidance</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell Us About Your Project</label>
-              <textarea id="message" name="message" placeholder="What does your business do? Do you have an existing website? What's the main goal — more calls, more walk-ins, online presence? Any specific pages you need?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px;">
-              Send Message
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </button>
-            <p style="font-size:.78rem;text-align:center;margin-top:12px;color:var(--text-muted);">We'll reply within a few hours. Your information is never shared with third parties.</p>
-          </form>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
+          </div>
         </div>
-        <div class="form-success" id="form-success">
-          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3>Message Received!</h3>
-          <p>We've got your message and will be in touch within a few hours. Check your WhatsApp or email for our response.</p>
-          <a href="index.html" class="btn btn-outline" style="margin-top:24px;">Back to Home</a>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-blue">Healthcare</span>
+          </div>
+          <h3>Demo Project – Dental Clinic Website</h3>
+          <p>A trust-first website for a dental practice. Includes doctor profile, services list, patient FAQs, appointment booking form, and a clean professional layout designed to convert anxious patients into visitors.</p>
+          <div class="pf-tags">
+            <span class="badge badge-navy">Web Design</span>
+            <span class="badge badge-green">SEO Ready</span>
+            <span class="badge badge-blue">Basic Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Boutique -->
+      <div class="portfolio-full-card">
+        <div class="portfolio-full-thumb thumb-boutique">
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(107,63,160,.5),rgba(45,27,78,.4));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
+            </div>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
+          </div>
+        </div>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-amber">Fashion &amp; Retail</span>
+          </div>
+          <h3>Demo Project – Boutique Website</h3>
+          <p>An elegant online showcase for a women's clothing boutique. Features product gallery, Instagram feed integration placeholder, collection categories, and WhatsApp order CTA for a seamless buying experience.</p>
+          <div class="pf-tags">
+            <span class="badge badge-navy">Web Design</span>
+            <span class="badge badge-blue">WhatsApp CTA</span>
+            <span class="badge badge-navy">Basic Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Gym -->
+      <div class="portfolio-full-card">
+        <div class="portfolio-full-thumb thumb-gym">
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(139,37,0,.5),rgba(26,10,0,.4));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
+            </div>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
+          </div>
+        </div>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-navy">Health &amp; Fitness</span>
+          </div>
+          <h3>Demo Project – Gym Website</h3>
+          <p>A high-energy, bold website for a local gym. Membership plans, trainer profiles, facilities gallery, trial class CTA, and timetable section designed to convert casual browsers into paying members.</p>
+          <div class="pf-tags">
+            <span class="badge badge-navy">Web Design</span>
+            <span class="badge badge-green">Lead Generation</span>
+            <span class="badge badge-blue">Standard Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Tuition -->
+      <div class="portfolio-full-card">
+        <div class="portfolio-full-thumb thumb-tuition">
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(0,105,64,.5),rgba(0,50,32,.4));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
+            </div>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
+          </div>
+        </div>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-green">Education</span>
+          </div>
+          <h3>Demo Project – Tuition Center Website</h3>
+          <p>A credibility-first website for a private tuition center. Subjects offered, batch schedules, faculty profiles, parent enquiry form, and fee structure section — designed to win parent trust.</p>
+          <div class="pf-tags">
+            <span class="badge badge-navy">Web Design</span>
+            <span class="badge badge-green">SEO</span>
+            <span class="badge badge-blue">Basic Plan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Real Estate — Featured -->
+      <div class="portfolio-full-card featured-card">
+        <div class="portfolio-full-thumb thumb-realestate" style="position:relative;overflow:hidden;">
+          <div class="featured-ribbon">Featured</div>
+          <div class="demo-label">Demo Project</div>
+          <div class="pf-mock">
+            <div class="pf-mock-bar"><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-dot"></div><div class="pf-url"></div></div>
+            <div class="pf-hero" style="background:linear-gradient(135deg,rgba(26,86,219,.6),rgba(10,22,40,.5));">
+              <div style="width:100%"><div class="pf-line"></div><div class="pf-line s"></div><div class="pf-line xs"></div></div>
+            </div>
+            <div class="pf-cols"><div class="pf-col"></div><div class="pf-col"></div><div class="pf-col"></div></div>
+          </div>
+        </div>
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="badge badge-blue">Real Estate</span>
+            <span class="badge badge-amber">Lead Generation</span>
+          </div>
+          <h3>Demo Project – Real Estate Website</h3>
+          <p>Our most conversion-focused demo — designed specifically for real estate agents and property developers. Features property listings grid, enquiry forms on every page, WhatsApp floating CTA, location maps, and a lead-capture hero section. Built on the Standard Plan.</p>
+          <div class="pf-tags">
+            <span class="badge badge-blue">Lead Generation</span>
+            <span class="badge badge-green">Standard Plan</span>
+            <span class="badge badge-amber">SEO</span>
+            <span class="badge badge-navy">WhatsApp CTA</span>
+          </div>
         </div>
       </div>
 
@@ -149,35 +295,18 @@
   </div>
 </section>
 
-<!-- ── Quick Links ──────────────────────── -->
-<section class="section-sm" style="background:var(--off-white);">
+<!-- ── CTA ─────────────────────────────── -->
+<section class="section cta-section">
   <div class="container">
-    <div class="text-center mb-32">
-      <h3>Not Sure Where to Start?</h3>
-      <p style="margin-top:8px;">These pages might help you decide before reaching out.</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:760px;margin:0 auto;">
-      <a href="pricing.html" style="display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:var(--transition);" onmouseover="this.style.borderColor='rgba(26,86,219,.3)'" onmouseout="this.style.borderColor='var(--border)'">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.75" width="22" height="22"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        <div>
-          <div style="font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--navy);">View Pricing</div>
-          <div style="font-size:.78rem;color:var(--text-muted);">Transparent plan details</div>
-        </div>
-      </a>
-      <a href="portfolio.html" style="display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:var(--transition);" onmouseover="this.style.borderColor='rgba(26,86,219,.3)'" onmouseout="this.style.borderColor='var(--border)'">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.75" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-        <div>
-          <div style="font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--navy);">See Portfolio</div>
-          <div style="font-size:.78rem;color:var(--text-muted);">Demo project examples</div>
-        </div>
-      </a>
-      <a href="process.html" style="display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;transition:var(--transition);" onmouseover="this.style.borderColor='rgba(26,86,219,.3)'" onmouseout="this.style.borderColor='var(--border)'">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.75" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        <div>
-          <div style="font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--navy);">Our Process</div>
-          <div style="font-size:.78rem;color:var(--text-muted);">How we work, step by step</div>
-        </div>
-      </a>
+    <div class="cta-inner">
+      <div>
+        <h2 style="color:var(--white);">Want a Website Like These for Your Business?</h2>
+        <p style="color:rgba(255,255,255,.6);margin-top:8px;">We'll design a custom concept for your business type and show it to you before you commit.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+        <a href="pricing.html" class="btn btn-white btn-lg">View Pricing</a>
+      </div>
     </div>
   </div>
 </section>
@@ -189,9 +318,9 @@
         <a href="index.html" class="nav-logo" style="font-size:1.2rem;">RNS <span>Digital</span></a>
         <p>Professional website design and digital growth services for local businesses across India.</p>
       </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="basic.html">Basic Website</a></li><li><a href="growth.html">Growth Plan</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="basic.html">Basic Website</a></li><li><a href="growth.html">Standard Plan</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
       <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/919XXXXXXXXX" target="_blank">WhatsApp Us</a></li><li><a href="mailto:hello@rnsdigital.in">hello@rnsdigital.in</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 RNS Digital.🩶 All rights reserved.</span>
