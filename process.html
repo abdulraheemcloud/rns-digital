@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How RNS Digital works — 4-step process from free consultation to website launch. Simple, transparent, and on-time." />
+  <title>Our Process – RNS Digital</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .process-full {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .process-full::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 47px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--blue), rgba(26,86,219,.1));
+    }
+    .process-full-step {
+      display: flex;
+      gap: 40px;
+      padding: 0 0 60px;
+      position: relative;
+    }
+    .process-full-step:last-child { padding-bottom: 0; }
+    .step-indicator {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .step-circle {
+      width: 56px; height: 56px;
+      background: var(--navy);
+      border: 2.5px solid var(--blue);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--blue-glow);
+    }
+    .step-body {
+      flex: 1;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      transition: var(--transition);
+    }
+    .step-body:hover { border-color: rgba(26,86,219,.25); box-shadow: var(--shadow-md); }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .step-icon-box {
+      width: 52px; height: 52px;
+      background: rgba(26,86,219,.07);
+      border: 1.5px solid rgba(26,86,219,.15);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-icon-box svg { width: 24px; height: 24px; stroke: var(--blue); fill: none; stroke-width: 1.75; }
+    .step-body h3 { margin-bottom: 0; }
+    .step-timeline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-display);
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(245,158,11,.08);
+      border: 1px solid rgba(245,158,11,.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+    .step-deliverables {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .step-deliverable {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .875rem;
+      color: var(--text);
+    }
+    .step-deliverable svg { width: 15px; height: 15px; stroke: var(--accent-2); fill: none; stroke-width: 2.5; flex-shrink: 0; }
+    @media (max-width: 640px) {
+      .process-full::before { left: 27px; }
+      .step-circle { width: 40px; height: 40px; font-size: .82rem; }
+      .process-full-step { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">RNS <span>Digital</span></a>
+      <ul class="nav-links">
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html" class="active">Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container">
+    <div class="page-header-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Process</span>
+      </div>
+      <h1>How We Work</h1>
+      <p>A simple, transparent 4-step process from your first message to a live website. No surprises, no delays — just clear progress.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Overview Steps ─────────────────── -->
+<section class="section" style="background:var(--off-white);">
+  <div class="container">
+    <div class="text-center mb-56">
+      <div class="section-label" style="justify-content:center;">The Process</div>
+      <h2>From Conversation to Live Website</h2>
+      <p class="mt-16 max-640">Most projects are completed within 10–18 working days depending on the plan and how quickly you share your content and feedback.</p>
+    </div>
+
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="process-full">
+
+        <!-- Step 1 -->
+        <div class="process-full-step">
+          <div class="step-indicator">
+            <div class="step-circle">01</div>
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h3>Consultation</h3>
+              </div>
+            </div>
+            <div class="step-timeline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Day 1 – Free, No Commitment
+            </div>
+            <p>We start with a simple conversation — over WhatsApp, phone, or a brief video call. We want to understand your business, your customers, and what you need your website to do.</p>
+            <p style="margin-top:10px;">We'll ask about your business type, your competitors, your goals, and your budget. Based on this, we'll recommend the right plan and discuss realistic expectations.</p>
+            <div class="step-deliverables">
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Plan recommendation (Basic or Growth)
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Clear project scope &amp; timeline
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Written quote with no hidden charges
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-full-step">
+          <div class="step-indicator">
+            <div class="step-circle">02</div>
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-icon-box">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <div>
+                <h3>Development</h3>
+              </div>
+            </div>
+            <div class="step-timeline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Days 2–10 (Basic) / Days 2–15 (Growth)
+            </div>
+            <p>Once you confirm and pay the 50% advance, we begin building. We'll request your content (logo, photos, text, services list) via WhatsApp. If you don't have content ready, we'll guide you on what's needed.</p>
+            <p style="margin-top:10px;">We send you a design preview link before completing the full build, so you can provide feedback early. This ensures there are no major surprises at the end.</p>
+            <div class="step-deliverables">
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Design preview within 4–5 working days
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Full website development with revisions
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                WhatsApp updates at every milestone
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-full-step">
+          <div class="step-indicator">
+            <div class="step-circle">03</div>
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-icon-box">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </div>
+              <div>
+                <h3>Optimization</h3>
+              </div>
+            </div>
+            <div class="step-timeline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Days 10–15 (runs alongside development)
+            </div>
+            <p>Before launch, we run through a quality checklist — page speed, mobile responsiveness, SEO meta tags, broken links, form testing, and cross-browser checks. This is not optional; it's part of every project.</p>
+            <div class="step-deliverables">
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Page speed optimization (image compression, clean code)
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                SEO meta tags, sitemap, robots.txt
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Mobile &amp; desktop testing on real devices
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Contact form &amp; WhatsApp link testing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-full-step">
+          <div class="step-indicator">
+            <div class="step-circle">04</div>
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div>
+                <h3>Launch &amp; Support</h3>
+              </div>
+            </div>
+            <div class="step-timeline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              Day 15–18 onwards
+            </div>
+            <p>Once you approve the final website and complete the remaining 50% payment, we go live. We'll help you connect your domain, set up your hosting, and point everything correctly so the launch is smooth.</p>
+            <p style="margin-top:10px;">After launch, you get 14 days (Basic) or 30 days (Growth) of post-launch support for any issues or minor tweaks. We'll also hand over all credentials and documentation so you're fully independent.</p>
+            <div class="step-deliverables">
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Domain + hosting setup assistance
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Full credential handover (you own everything)
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Post-launch support window
+              </div>
+              <div class="step-deliverable">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                Optional monthly support plans available
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Timeline Summary ────────────────── -->
+<section class="section-sm" style="background:var(--white);">
+  <div class="container max-760">
+    <h3 style="margin-bottom:24px;">Typical Project Timeline</h3>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;padding:16px 20px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);">
+        <div style="font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--navy);">Day 1</div>
+        <div style="font-size:.875rem;color:var(--text-muted);">Consultation &amp; project confirmation. 50% advance payment.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;padding:16px 20px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);">
+        <div style="font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--navy);">Day 4–5</div>
+        <div style="font-size:.875rem;color:var(--text-muted);">Design preview shared via link for your feedback.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;padding:16px 20px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);">
+        <div style="font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--navy);">Day 8–12</div>
+        <div style="font-size:.875rem;color:var(--text-muted);">Revisions completed. Full website ready for review.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;padding:16px 20px;background:var(--off-white);border:1px solid var(--border);border-radius:var(--radius);">
+        <div style="font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--navy);">Day 14–18</div>
+        <div style="font-size:.875rem;color:var(--text-muted);">Final approval, remaining payment, and website goes live.</div>
+      </div>
+    </div>
+    <p style="font-size:.82rem;margin-top:16px;color:var(--text-muted);">Note: Timelines may vary if content (text, photos, logo) is delayed on the client's end. We'll always communicate openly if there are any delays.</p>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2 style="color:var(--white);">Ready to Start Step 1?</h2>
+        <p style="color:rgba(255,255,255,.6);margin-top:8px;">The first consultation is free and takes less than 20 minutes. Let's talk about your business.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start Free Consultation</a>
+        <a href="pricing.html" class="btn btn-white btn-lg">View Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.2rem;">RNS <span>Digital</span></a>
+        <p>Professional website design and digital growth services for local businesses across India.</p>
+      </div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="basic.html">Basic Website</a></li><li><a href="growth.html">Growth Plan</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/919XXXXXXXXX" target="_blank">WhatsApp Us</a></li><li><a href="mailto:hello@rnsdigital.in">hello@rnsdigital.in</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RNS 🩶 Digital. All rights reserved.</span>
+      <span>Built for Local Business Growth in India</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
