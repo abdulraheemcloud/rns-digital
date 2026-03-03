@@ -1,367 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RNS Digital Standard Plan – ₹8,999. Lead generation focused website for real estate, gyms, clinics, and growing local businesses. Advanced SEO, Analytics, conversion optimization." />
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RNS Digital Standard Plan – ₹8,499 launch offer. 3-5 page website, advanced SEO, lead tracking, Google Business Profile optimization, 30-day support. 1st year all-inclusive."/>
   <title>Standard Plan – RNS Digital</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <style>
-    .plan-hero.growth-hero {
-      background: linear-gradient(135deg, #0A1628 0%, #0F2044 50%, #0A1628 100%);
-    }
-    .plan-hero.growth-hero::before {
-      background: radial-gradient(ellipse 60% 70% at 85% 50%, rgba(26,86,219,.35) 0%, transparent 70%),
-                  radial-gradient(ellipse 30% 40% at 15% 70%, rgba(59,130,246,.15) 0%, transparent 60%);
-    }
-    .growth-highlight {
-      background: linear-gradient(135deg, rgba(26,86,219,.06), rgba(59,130,246,.04));
-      border: 1.5px solid rgba(26,86,219,.18);
-      border-radius: var(--radius-lg);
-      padding: 36px;
-    }
-    .industries-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-    }
-    .industry-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: var(--transition);
-    }
-    .industry-card:hover { border-color: rgba(26,86,219,.3); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-    .industry-icon {
-      width: 40px; height: 40px;
-      background: rgba(26,86,219,.07);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .industry-icon svg { width: 20px; height: 20px; stroke: var(--blue); fill: none; stroke-width: 1.75; }
-    .industry-card span { font-family: var(--font-display); font-size: .875rem; font-weight: 600; color: var(--navy); }
-    .industry-card.realestate-highlight { border-color: var(--blue); background: rgba(26,86,219,.03); }
+    .plan-hero.standard-hero::before { background: radial-gradient(ellipse 60% 70% at 85% 50%,rgba(26,86,219,.38) 0%,transparent 70%),radial-gradient(ellipse 30% 40% at 15% 70%,rgba(59,130,246,.15) 0%,transparent 60%); }
+    .std-highlight { background:linear-gradient(135deg,rgba(26,86,219,.06),rgba(59,130,246,.03)); border:1.5px solid rgba(26,86,219,.18); border-radius:var(--radius-lg); padding:32px; }
+    .industries-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; }
+    .industry-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius); padding:18px; display:flex; align-items:center; gap:12px; transition:var(--transition); }
+    .industry-card:hover { border-color:rgba(26,86,219,.3); transform:translateY(-2px); }
+    .industry-card.hl { border-color:var(--blue); background:rgba(26,86,219,.03); }
+    .industry-icon { width:38px; height:38px; background:rgba(26,86,219,.07); border-radius:9px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .industry-icon svg { width:18px; height:18px; stroke:var(--blue); fill:none; stroke-width:1.75; }
+    .industry-card span { font-family:var(--font-display); font-size:.84rem; font-weight:600; color:var(--navy); }
   </style>
 </head>
 <body>
 
+<div class="offer-banner"><p>Limited Launch Offer <span>First Few Clients Only</span> Basic: &#8377;4,999 &bull; Standard: &#8377;8,499 &bull; 1st Year All-Inclusive</p></div>
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="nav-logo">RNS <span>Digital</span></a>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="RNS Digital Logo" class="nav-logo-img"/>
+        <span>RNS <span class="logo-highlight">Digital</span></span>
+      </a>
       <ul class="nav-links">
-        <li><a href="why-us.html">Why Us</a></li>
-        <li><a href="pricing.html" class="active">Pricing</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="process.html">Process</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+        <li><a href="index.html">Home</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="pricing.html" class="active">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:+917550268805" class="nav-cta nav-call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
+      Call Us</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
-<!-- ── Plan Hero ────────────────────────── -->
-<section class="plan-hero growth-hero">
-  <div class="container">
-    <div class="plan-hero-content">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a><span>/</span>
-        <a href="pricing.html">Pricing</a><span>/</span>
-        <span>Standard Plan</span>
-      </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;margin-bottom:14px;">
-        <div class="section-label light">Most Recommended</div>
-        <div class="section-label light" style="color:var(--accent);background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.25);">One-Time Payment</div>
-      </div>
-      <h1>The Standard Plan</h1>
-      <p>A conversion-focused, lead-generating website built for businesses that want more enquiries, more calls, and measurable results from their online presence.</p>
-      <div class="plan-price-tag">
-        <span class="rupee">&#8377;</span>
-        <span class="amount">8,499</span>
-        <span class="suffix">one-time</span>
-      </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="contact.html?plan=growth" class="btn btn-primary btn-lg">Get Started with Growth</a>
-        <a href="basic.html" class="btn" style="background:rgba(255,255,255,.1);color:var(--white);padding:16px 28px;border-radius:12px;">Compare: Basic Plan</a>
-      </div>
+<!-- PLAN HERO -->
+<section class="plan-hero standard-hero">
+  <div class="container"><div class="plan-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="pricing.html">Pricing</a><span>/</span><span>Standard Plan</span></div>
+    <div class="d-flex flex-wrap" style="gap:8px;margin-top:14px;margin-bottom:14px;">
+      <div class="section-label light">Most Recommended</div>
+      <div class="section-label light" style="color:var(--accent);background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.25);">Launch Offer</div>
+      <div class="section-label light" style="color:var(--accent-2);background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.25);">1st Year All-Inclusive</div>
     </div>
-  </div>
+    <h1>Standard Business Plan</h1>
+    <p class="plan-hero-desc">For businesses serious about getting more enquiries through Google &amp; WhatsApp. More pages, better SEO, lead tracking, and 30-day support.</p>
+    <div class="plan-orig-price">Original Price: &#8377;9,999</div>
+    <div class="plan-price-hero">
+      <span class="r">&#8377;</span>
+      <span class="amt">8,499</span>
+      <span class="sfx">1st year all-inclusive</span>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="contact.html?plan=standard" class="btn btn-primary btn-lg">Get Started – &#8377;8,499</a>
+      <a href="basic.html" class="btn btn-lg" style="background:rgba(255,255,255,.1);color:var(--white);border:1px solid rgba(255,255,255,.2);">Compare Basic Plan</a>
+    </div>
+  </div></div>
 </section>
 
-<!-- ── Growth Positioning ──────────────── -->
+<!-- STANDARD POSITIONING -->
 <section class="section-sm" style="background:var(--white);">
   <div class="container max-760">
-    <div class="growth-highlight">
-      <div class="section-label" style="margin-bottom:14px;">What Makes Growth Different</div>
-      <h3>This Plan Is Built Around One Goal: Generating Leads</h3>
-      <p style="margin-top:10px;">The Basic Plan establishes your online presence. The Standard Plan takes it further — every page, every button, every section is designed with the question: "Will this make a visitor take action?"</p>
-      <p style="margin-top:10px;">You get a bigger website, more conversion touchpoints, tracking via Google Analytics, and SEO that's actually targeted — not just boxes ticked.</p>
+    <div class="std-highlight">
+      <div class="section-label" style="margin-bottom:12px;">What Makes Standard Different</div>
+      <h3>Built Around One Goal: Getting You More Enquiries</h3>
+      <p style="margin-top:10px;">The Basic Plan establishes your online presence. The Standard Plan takes it further — every page, every button, every section is built to turn website visitors into actual customer enquiries through Google search and WhatsApp.</p>
+      <p style="margin-top:10px;">More pages means more chances to appear in Google. Better SEO means you rank for local search terms. Lead tracking means you know what's working.</p>
     </div>
   </div>
 </section>
 
-<!-- ── What's Included ─────────────────── -->
+<!-- WHAT'S INCLUDED -->
 <section class="section" style="background:var(--off-white);">
   <div class="container">
     <div class="text-center mb-48">
       <div class="section-label" style="justify-content:center;">Full Breakdown</div>
-      <h2>What's Included in Growth</h2>
-      <p class="mt-16 max-640">11 deliverables — every one of them chosen because it directly impacts your ability to attract and convert customers online.</p>
+      <h2>Everything in the Standard Plan</h2>
+      <p class="mt-16 max-640">Everything from the Basic Plan, plus these additional deliverables — all included in the &#8377;8,499 first-year price.</p>
     </div>
     <div class="includes-grid">
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">01</div>
-        <div>
-          <h4>Up to 10 Pages</h4>
-          <p>Home, About, Services (multiple pages), Gallery, Testimonials, FAQ, Blog (structure only), and Contact. More pages means more entry points from Google.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">02</div>
-        <div>
-          <h4>Conversion-Optimized Design</h4>
-          <p>Strategic CTA placement on every page. Lead capture forms above the fold. Sticky contact buttons. Design decisions guided by what drives action, not just what looks good.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">03</div>
-        <div>
-          <h4>Multi-Point Lead Capture</h4>
-          <p>Enquiry forms on landing pages, sidebar forms, WhatsApp floating button, click-to-call on mobile, and a dedicated "Get a Quote" or "Book a Consultation" flow.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">04</div>
-        <div>
-          <h4>Google Business Profile Setup</h4>
-          <p>We'll assist you in setting up or optimising your Google Business Profile — the single most important local SEO asset for appearing in "near me" searches.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">05</div>
-        <div>
-          <h4>Advanced On-Page SEO</h4>
-          <p>Targeted keyword research for your business type and location. Optimized page titles, meta descriptions, heading hierarchy, structured data markup, and XML sitemap submission.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">06</div>
-        <div>
-          <h4>Google Analytics Integration</h4>
-          <p>Track where your visitors come from, which pages they visit, and what they do. We'll set up Google Analytics and explain how to read the basic reports that matter.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">07</div>
-        <div>
-          <h4>Photo Gallery / Portfolio Section</h4>
-          <p>A professional gallery to showcase your work, property listings, food photos, clinic infrastructure, or products — with a clean lightbox and mobile-optimised display.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">08</div>
-        <div>
-          <h4>Testimonials &amp; Trust Section</h4>
-          <p>A dedicated section to display customer testimonials, certifications, awards, or press mentions. Social proof is one of the most effective conversion tools for local businesses.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">09</div>
-        <div>
-          <h4>3 Rounds of Revision</h4>
-          <p>One extra revision round compared to the Basic plan, giving you more flexibility to refine the design until it's exactly right for your brand.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">10</div>
-        <div>
-          <h4>30-Day Post-Launch Support</h4>
-          <p>Double the post-launch support window — 30 days for bugs, tweaks, content updates, and guidance via WhatsApp after your website goes live.</p>
-        </div>
-      </div>
-
-      <div class="include-item">
-        <div class="include-num" style="background:var(--blue);">11</div>
-        <div>
-          <h4>Domain + Hosting Guidance</h4>
-          <p>Full assistance setting up your domain, choosing the right hosting for your needs, and making everything go live correctly — in your name, on your accounts.</p>
-        </div>
-      </div>
-
+      <div class="include-item"><div class="include-num">01</div><div><h4>Everything in Basic Plan</h4><p>All 13 features from the Basic Plan are included — WhatsApp button, click-to-call, contact form, SEO setup, Google Maps, SSL, and 1-year domain.</p></div></div>
+      <div class="include-item"><div class="include-num">02</div><div><h4>3–5 Page Professional Website</h4><p>Home, About, Services (one or more pages), Gallery, and Contact — each page designed with a clear purpose and conversion-focused layout.</p></div></div>
+      <div class="include-item"><div class="include-num">03</div><div><h4>Advanced On-Page SEO</h4><p>Targeted page titles, meta descriptions, H1/H2 structure, schema markup, image optimization, and XML sitemap submission to Google Search Console.</p></div></div>
+      <div class="include-item"><div class="include-num">04</div><div><h4>Local Keyword Optimization</h4><p>Research your business keywords + city/area combinations (e.g. "dental clinic in [city]") and optimize all pages to rank for those searches.</p></div></div>
+      <div class="include-item"><div class="include-num">05</div><div><h4>Image &amp; Speed Optimization</h4><p>All images compressed, code minified, and hosting configured for fast load times. Critical for both user experience and Google rankings.</p></div></div>
+      <div class="include-item"><div class="include-num">06</div><div><h4>Google Business Profile Optimization</h4><p>Your GBP listing fully completed — business description, categories, photos, services, and working hours — to maximize visibility in "near me" searches.</p></div></div>
+      <div class="include-item"><div class="include-num">07</div><div><h4>Lead Tracking Setup</h4><p>Google Analytics installed and configured to track website visitors, traffic sources, and which pages get the most engagement.</p></div></div>
+      <div class="include-item"><div class="include-num">08</div><div><h4>1-Year Domain Included</h4><p>Your domain (.in or .com) included for 1st year, registered in your name. You own it fully.</p></div></div>
+      <div class="include-item"><div class="include-num">09</div><div><h4>30 Days Free Support</h4><p>30 days of WhatsApp support after launch — bugs, tweaks, content updates, and guidance. 4x longer than Basic plan support.</p></div></div>
     </div>
-
     <div class="notice-box mt-48 max-760" style="margin-left:auto;margin-right:auto;">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      <p><strong>From 2nd Year – Domain Renewal:</strong> Approximately &#8377;800 – &#8377;1,200/year paid directly to the registrar. Hosting renewal cost depends on the provider you choose — we'll help you pick a cost-effective option. No markup from us.</p>
+      <p><strong>From 2nd Year – Domain Renewal:</strong> Approximately &#8377;800–&#8377;1,200/year, paid directly to the registrar. No markup, no involvement from us in that transaction.</p>
     </div>
   </div>
 </section>
 
-<!-- ── Industries ─────────────────────── -->
+<!-- INDUSTRIES -->
 <section class="section" style="background:var(--white);">
   <div class="container">
     <div class="text-center mb-40">
-      <div class="section-label" style="justify-content:center;">Best Suited For</div>
+      <div class="section-label" style="justify-content:center;">Best For</div>
       <h2>Industries That Benefit Most from Standard Plan</h2>
-      <p class="mt-12 max-640">The Standard Plan works best for businesses where a single enquiry has significant revenue potential — making the investment pay for itself quickly.</p>
+      <p class="mt-12 max-640">The Standard Plan works best where a single enquiry has significant revenue potential — making the investment pay for itself quickly.</p>
     </div>
-    <div class="industries-grid" style="max-width:900px;margin:0 auto;">
-      <div class="industry-card realestate-highlight">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
+    <div class="industries-grid" style="max-width:860px;margin:0 auto;">
+      <div class="industry-card hl">
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <span>Real Estate &amp; Property</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
         <span>Clinics &amp; Healthcare</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-        </div>
-        <span>Interior Design &amp; Decor</span>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg></div>
+        <span>Gyms &amp; Fitness</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/></svg>
-        </div>
-        <span>Gyms &amp; Fitness Centers</span>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <span>Interior Design</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-        </div>
-        <span>Coaching &amp; Education</span>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <span>Coaching &amp; Tuition</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </div>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
         <span>Professional Services</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        </div>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
         <span>Retail &amp; Boutiques</span>
       </div>
       <div class="industry-card">
-        <div class="industry-icon">
-          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-        </div>
+        <div class="industry-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <span>Construction &amp; Contractors</span>
       </div>
     </div>
 
     <!-- Real estate spotlight -->
-    <div style="max-width:760px;margin:48px auto 0;background:var(--navy);border-radius:var(--radius-lg);padding:36px;position:relative;overflow:hidden;">
+    <div style="max-width:740px;margin:48px auto 0;background:var(--navy);border-radius:var(--radius-lg);padding:32px;position:relative;overflow:hidden;">
       <div style="position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 80% 50%,rgba(26,86,219,.35) 0%,transparent 70%);pointer-events:none;"></div>
       <div style="position:relative;z-index:1;">
         <div class="section-label light" style="margin-bottom:12px;">Real Estate Focus</div>
-        <h3 style="color:var(--white);margin-bottom:10px;">Why Real Estate Businesses Need the Standard Plan</h3>
-        <p style="color:rgba(255,255,255,.65);">In real estate, one lead can translate to lakhs in commission. A Standard Plan website — with dedicated property listing pages, prominent enquiry forms, location maps, and WhatsApp CTAs on every page — is built specifically to capture those leads at every stage of the buyer's search journey.</p>
-        <a href="contact.html?plan=growth&type=realestate" class="btn btn-primary" style="margin-top:24px;">Get a Real Estate Website</a>
+        <h3 style="color:var(--white);margin-bottom:10px;">Why Real Estate Businesses Need Standard Plan</h3>
+        <p style="color:rgba(255,255,255,.65);">In real estate, one lead can mean lakhs in commission. A Standard Plan website — with dedicated property pages, prominent enquiry forms, WhatsApp CTA on every section, and local SEO — is built specifically to capture those leads from Google searches.</p>
+        <a href="contact.html?plan=standard&type=realestate" class="btn btn-primary" style="margin-top:22px;">Get a Real Estate Website</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Who Is This For ─────────────────── -->
+<!-- WHO IT'S FOR -->
 <section class="section" style="background:var(--off-white);">
   <div class="container max-760">
     <div class="section-label">Ideal For</div>
-    <h2 style="margin-top:12px;margin-bottom:8px;">Who Should Choose the Standard Plan?</h2>
-    <p style="margin-bottom:32px;">Choose Growth if any of these describe your situation:</p>
+    <h2 style="margin:12px 0 8px;">Who Should Choose the Standard Plan?</h2>
+    <p style="margin-bottom:28px;">Choose Standard if any of these describe your situation:</p>
     <div class="suitability-list">
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        Your business depends on generating leads — property enquiries, appointment bookings, consultation requests, or service quotes.
-      </div>
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        You operate in a competitive local market and need a website that stands out and captures attention within seconds.
-      </div>
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        You want to appear in Google search results for location-specific terms (e.g., "real estate agent in [city]" or "dental clinic near [area]").
-      </div>
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        You have a portfolio of work, property listings, or service packages to display — and want it presented in a way that converts browsers into enquirers.
-      </div>
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        You want to track your website performance and understand which marketing channels are sending you traffic and leads.
-      </div>
-      <div class="suitability-item">
-        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        You're planning to run Google Ads or Meta Ads later — and want a website that's ready to receive paid traffic with proper landing pages.
-      </div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Your business depends on generating leads — property enquiries, appointment bookings, consultation requests, or service quotes.</div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>You operate in a competitive local market and want a website that ranks in Google for your city/area searches.</div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>You want to appear in Google for terms like "[your business type] in [your city]".</div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>You have a portfolio of work, property listings, or service packages to show — and want it presented to convert browsers into enquirers.</div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>You want to track your website traffic and understand which channels send you leads.</div>
+      <div class="suitability-item"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>You plan to run Google Ads or Meta Ads later — and want a website with proper landing pages ready to receive paid traffic.</div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA ─────────────────────────────── -->
+<!-- CTA -->
 <section class="section cta-section">
-  <div class="container">
-    <div class="cta-inner">
-      <div>
-        <h2 style="color:var(--white);">Ready to Build a Website That Generates Leads?</h2>
-        <p style="color:rgba(255,255,255,.6);margin-top:8px;">Tell us about your business and we'll show you exactly how we'd approach your Standard Plan website.</p>
-      </div>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary btn-lg">Start Standard Plan – &#8377;8,999</a>
-        <a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20the%20Growth%20Plan%20for%20my%20business." class="btn btn-white btn-lg" target="_blank">WhatsApp Us</a>
-      </div>
+  <div class="container"><div class="cta-inner">
+    <div>
+      <h2 style="color:var(--white);">Build a Website That Gets You More Enquiries</h2>
+      <p style="color:rgba(255,255,255,.6);margin-top:8px;">Standard Plan at &#8377;8,499. 1st year fully all-inclusive. Domain in your name. No hidden charges.</p>
     </div>
-  </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">Start Standard Plan</a>
+      <a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20the%20Standard%20Plan%20for%20%E2%82%B98%2C499." class="btn btn-white btn-lg" target="_blank">WhatsApp Us</a>
+    </div>
+  </div></div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="font-size:1.2rem;">RNS <span>Digital</span></a>
-        <p>Professional website design and digital growth services for local businesses across India.</p>
-      </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="basic.html">Basic Website</a></li><li><a href="growth.html">Standard Plan</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2024 RNS Digital. All rights reserved.</span>
-      <span>Built for Local Business Growth in India</span>
-    </div>
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><img src="images/logo.png" alt="RNS Digital" class="nav-logo-img"/><span>RNS <span class="logo-highlight">Digital</span></span></a><p>Professional website design for local businesses across India. Honest pricing. Real results.</p></div>
+    <div class="footer-col"><h5>Plans</h5><ul><li><a href="basic.html">Basic Plan – &#8377;4,999</a></li><li><a href="standard.html">Standard Plan – &#8377;8,499</a></li><li><a href="pricing.html">Full Pricing</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
+    <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
   </div>
-</footer>
+  <div class="footer-bottom"><span>&copy; 2024 RNS Digital. All rights reserved.</span><span>Built for Local Business Growth in India</span></div>
+</div></footer>
 
-<a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+<a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20the%20Standard%20Plan." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
 </a>
-
 <script src="js/script.js"></script>
 </body>
 </html>
