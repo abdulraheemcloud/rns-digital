@@ -1,112 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Demo concept websites by RNS Digital — restaurant, dental, boutique, gym, tuition, real estate designs."/>
-  <title>Portfolio – RNS Digital</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RNS Digital portfolio — 6 concept/demo website designs for local businesses. Restaurant, dental, boutique, gym, tuition, and real estate."/>
+  <title>Portfolio – Demo Projects | RNS Digital</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/script.js" defer></script>
+  <style>
+    .port-disclaimer {
+      background: #fdf6e8;
+      border: 1.5px solid #f0d498;
+      border-radius: var(--r-md);
+      padding: 16px 22px;
+      margin-bottom: 52px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .port-disclaimer svg { width: 20px; height: 20px; color: var(--c-gold); flex-shrink: 0; margin-top: 1px; }
+    .port-disclaimer p  { font-size: 14px; color: #7a5e1a; line-height: 1.65; }
+    .port-disclaimer strong { color: #5a4010; }
+    .port-demo-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #3b73f6;
+      border: 1.5px solid rgba(30,94,243,.25);
+      padding: 7px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all .24s ease;
+      background: rgba(30,94,243,.04);
+    }
+    .port-demo-btn:hover {
+      background: rgba(30,94,243,.12);
+      border-color: #1e5ef3;
+      transform: translateY(-2px);
+      color: #1447cc;
+    }
+    .port-card--highlight .port-demo-btn {
+      color: #f0bf6e;
+      border-color: rgba(201,149,42,.3);
+      background: rgba(201,149,42,.06);
+    }
+    .port-card--highlight .port-demo-btn:hover {
+      background: rgba(201,149,42,.14);
+      border-color: #c9952a;
+      color: #f0d090;
+    }
+  </style>
 </head>
-<body><div class="offer-banner"><p>Limited Launch Offer <span>First Few Clients Only</span> Basic: &#8377;4,999 &bull; Standard: &#8377;8,499 &bull; 1st Year All-Inclusive</p></div>
-<nav class="navbar">
+<body>
+
+<header class="site-nav" id="siteNav">
   <div class="container">
-    <div class="navbar-inner">
+    <nav class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="RNS Digital Logo" class="nav-logo-img"/>
-        <span>RNS <span class="logo-highlight">Digital</span></span>
+        <div class="nav-logo__mark"><svg viewBox="0 0 20 20" fill="none"><path d="M4 4h5a3 3 0 013 3v0a3 3 0 01-3 3H4V4z" fill="white" opacity=".9"/><path d="M4 10h5l4 6H9L4 10z" fill="white"/></svg></div>
+        <span class="nav-logo__text">RNS <span>Digital</span></span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html" class="active">Portfolio</a></li><li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
-        <li><a href="tel:+917550268805" class="nav-cta nav-call">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
-      Call Us</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="why-us.html">Why Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero__grid"></div>
+  <div class="container">
+    <div class="page-hero__inner">
+      <div class="sec-tag sec-tag--light" style="margin:0 auto 20px;">Our Work</div>
+      <h1>Concept &amp; <span>Demo Projects</span></h1>
+      <p>The designs below are concept websites created to demonstrate our capabilities and design approach. All are clearly labelled as demo projects — no real client data is represented.</p>
     </div>
   </div>
-</nav><section class="page-header"><div class="container"><div class="page-header-inner">
-<div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Portfolio</span></div>
-<h1>Demo Projects & Concepts</h1><p>These are concept websites built to demonstrate design quality across different local business types. All labeled as demos — no real client data.</p>
-</div></div></section>
-<section class="section" style="background:var(--white);">
-<div class="container">
-<div class="notice-box mb-40 max-760" style="margin-left:auto;margin-right:auto;">
-<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-<p><strong>Transparency notice:</strong> All projects shown here are demo/concept websites. They are not live client websites. They showcase our design style and industry-specific approach.</p>
-</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px;"><div class="portfolio-card ">
-<div class="port-thumb thumb-restaurant" style="position:relative;overflow:hidden;">
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">Spice Garden Restaurant</div>
-</div>
-<div class="port-info">
-<span class="badge badge-amber" style="margin-bottom:8px;">Food & Dining</span>
-<h4>Demo Project – Restaurant Website</h4>
-<p>Warm, appetizing design with menu showcase, reservation CTA, gallery, and Google Maps.</p>
-<div class="port-tags"><span class="badge badge-navy">Web Design</span> <span class="badge badge-navy">Basic Plan</span></div>
-</div></div><div class="portfolio-card ">
-<div class="port-thumb thumb-dental" style="position:relative;overflow:hidden;">
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">SmileCare Dental Clinic</div>
-</div>
-<div class="port-info">
-<span class="badge badge-blue" style="margin-bottom:8px;">Healthcare</span>
-<h4>Demo Project – Dental Clinic Website</h4>
-<p>Trust-first design with services listing, doctor profile, FAQ, and appointment booking CTA.</p>
-<div class="port-tags"><span class="badge badge-navy">Web Design</span> <span class="badge badge-navy">SEO</span> <span class="badge badge-navy">Basic Plan</span></div>
-</div></div><div class="portfolio-card ">
-<div class="port-thumb thumb-boutique" style="position:relative;overflow:hidden;">
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">Radha Fashion Boutique</div>
-</div>
-<div class="port-info">
-<span class="badge badge-amber" style="margin-bottom:8px;">Fashion & Retail</span>
-<h4>Demo Project – Boutique Website</h4>
-<p>Elegant showcase with product gallery, collection categories, and WhatsApp order button.</p>
-<div class="port-tags"><span class="badge badge-navy">Web Design</span> <span class="badge badge-navy">WhatsApp CTA</span> <span class="badge badge-navy">Basic Plan</span></div>
-</div></div><div class="portfolio-card ">
-<div class="port-thumb thumb-gym" style="position:relative;overflow:hidden;">
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">Peak Performance Gym</div>
-</div>
-<div class="port-info">
-<span class="badge badge-navy" style="margin-bottom:8px;">Health & Fitness</span>
-<h4>Demo Project – Gym Website</h4>
-<p>High-energy layout with membership plans, trainer profiles, timetable, and trial class CTA.</p>
-<div class="port-tags"><span class="badge badge-navy">Web Design</span> <span class="badge badge-navy">Lead Gen</span> <span class="badge badge-navy">Standard Plan</span></div>
-</div></div><div class="portfolio-card ">
-<div class="port-thumb thumb-tuition" style="position:relative;overflow:hidden;">
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">Bright Minds Tuition</div>
-</div>
-<div class="port-info">
-<span class="badge badge-green" style="margin-bottom:8px;">Education</span>
-<h4>Demo Project – Tuition Center Website</h4>
-<p>Credibility-first design with subjects, batch schedule, faculty profiles, and parent enquiry form.</p>
-<div class="port-tags"><span class="badge badge-navy">Web Design</span> <span class="badge badge-navy">SEO</span> <span class="badge badge-navy">Basic Plan</span></div>
-</div></div><div class="portfolio-card featured-p">
-<div class="port-thumb thumb-realestate" style="position:relative;overflow:hidden;"><div style="position:absolute;top:14px;right:-28px;background:var(--blue);color:var(--white);font-family:var(--font-display);font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 36px;transform:rotate(45deg);z-index:2;">Featured</div>
-<div class="demo-label">Demo Project</div>
-<div class="thumb-label">Prestige Properties</div>
-</div>
-<div class="port-info">
-<span class="badge badge-blue" style="margin-bottom:8px;">Real Estate</span>
-<h4>Demo Project – Real Estate Website</h4>
-<p>Lead-generation focused — property listings, enquiry forms, WhatsApp CTA on every page.</p>
-<div class="port-tags"><span class="badge badge-blue">Lead Gen</span><span class="badge badge-green">Standard Plan</span><span class="badge badge-amber">SEO</span></div>
-</div></div></div>
-</div></section>
-<section class="section cta-section"><div class="container"><div class="cta-inner">
-<div><h2 style="color:var(--white);">Want a Website Like These for Your Business?</h2><p style="color:rgba(255,255,255,.6);margin-top:8px;">We'll design a custom site for your business type. Delivery in 7 days for Basic plan.</p></div>
-<div class="cta-actions"><a href="contact.html" class="btn btn-primary btn-lg">Free Consultation</a><a href="pricing.html" class="btn btn-white btn-lg">View Pricing</a></div>
-</div></div></section><footer class="footer"><div class="container">
-  <div class="footer-grid">
-    <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><img src="images/logo.png" alt="RNS Digital" class="nav-logo-img"/><span>RNS <span class="logo-highlight">Digital</span></span></a><p>Professional website design for local businesses across India. Honest pricing. Real results.</p></div>
-    <div class="footer-col"><h5>Plans</h5><ul><li><a href="basic.html">Basic Plan &#8377;4,999</a></li><li><a href="standard.html">Standard Plan &#8377;8,499</a></li><li><a href="pricing.html">Full Pricing</a></li></ul></div>
-    <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
+</section>
+
+<section class="portfolio-page">
+  <div class="container">
+    <!-- Disclaimer banner -->
+    <div class="port-disclaimer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <p><strong>Important Note:</strong> All six projects below are demo/concept websites created by RNS Digital to showcase design styles and capabilities. They do not represent actual clients. Business names, content, and data shown are fictional and used for illustration purposes only.</p>
+    </div>
+
+    <div class="port-grid">
+
+      <!-- 1. Restaurant -->
+      <div class="port-card reveal reveal-d1">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#0d1c30,#1a2e45);">
+          <div class="port-card__badge">Demo Project</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--accent mock-line--w80"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-line mock-line--w60"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Restaurant &amp; Food</div>
+          <h3>Demo Project – Restaurant Website</h3>
+          <p>A 5-page concept for a local restaurant featuring a visual menu layout, ambiance gallery, business hours display, and WhatsApp reservation button. Designed to showcase the restaurant's personality and make contacting easy.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Mobile Responsive</span>
+            <span class="port-tag">Growth Plan</span>
+            <span class="port-tag">Local SEO</span>
+          </div>
+          <a href="demos/spice-garden/index.html" class="port-demo-btn" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h3v3M13 3l-6 6M6 4H3v9h9v-3"/></svg>
+            View Live Demo
+          </a>
+      <div class="port-card reveal reveal-d2">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#071a2e,#0d2840);">
+          <div class="port-card__badge">Demo Project</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--accent mock-line--w60"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-line mock-line--w80"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w45"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Healthcare &amp; Clinic</div>
+          <h3>Demo Project – Dental Clinic Website</h3>
+          <p>A clean, trust-focused 1-page concept for a dental clinic. The layout includes service descriptions, doctor credentials section, clinic hours, Google Maps embed, and a prominent WhatsApp appointment link.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Basic Plan</span>
+            <span class="port-tag">Google Business</span>
+            <span class="port-tag">Local SEO</span>
+          </div>
+          <a href="demos/smile-care/index.html" class="port-demo-btn" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h3v3M13 3l-6 6M6 4H3v9h9v-3"/></svg>
+            View Live Demo
+          </a>
+      <div class="port-card reveal reveal-d3">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#100d20,#1c1640);">
+          <div class="port-card__badge">Demo Project</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--w80" style="background:rgba(180,140,255,.5);"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w60"></div>
+              <div class="mock-line mock-line--w100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Retail &amp; Fashion</div>
+          <h3>Demo Project – Boutique Website</h3>
+          <p>A 3-page concept for a clothing boutique featuring a product catalogue layout, new arrivals section, size guide, and WhatsApp order flow. Designed to communicate quality and drive in-store or online enquiries.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Growth Plan</span>
+            <span class="port-tag">WhatsApp Integration</span>
+          </div>
+          <span class="port-demo-btn" style="opacity:.5;cursor:default;">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5l2 1.5"/></svg>
+            Demo Coming Soon
+          </span>
+      <div class="port-card reveal reveal-d1">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#0e1820,#162330);">
+          <div class="port-card__badge">Demo Project</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--w100" style="background:rgba(255,140,60,.45);"></div>
+              <div class="mock-line mock-line--w80"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w60"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Health &amp; Fitness</div>
+          <h3>Demo Project – Gym Website</h3>
+          <p>A high-energy 4-page concept for a local gym. Covers membership plans, trainer profiles, facilities section, class timetable layout, and a lead capture form for free trial enquiries.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Lead Capture</span>
+            <span class="port-tag">Growth Plan</span>
+            <span class="port-tag">Local SEO</span>
+          </div>
+          <span class="port-demo-btn" style="opacity:.5;cursor:default;">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5l2 1.5"/></svg>
+            Demo Coming Soon
+          </span>
+      <div class="port-card reveal reveal-d2">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#0a1e14,#0e2c1c);">
+          <div class="port-card__badge">Demo Project</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--w70" style="width:70%;background:rgba(60,210,120,.45);"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-line mock-line--w80"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Education &amp; Coaching</div>
+          <h3>Demo Project – Tuition Center Website</h3>
+          <p>A 2-page concept for a local tuition centre showing subject offerings, batch timings, teacher background, and a clear enquiry form. Positioned to build parent confidence and drive admissions.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Basic Plan</span>
+            <span class="port-tag">Google Business</span>
+          </div>
+          <span class="port-demo-btn" style="opacity:.5;cursor:default;">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5l2 1.5"/></svg>
+            Demo Coming Soon
+          </span>
+      <div class="port-card port-card--highlight reveal reveal-d3">
+        <div class="port-card__thumb" style="background:linear-gradient(135deg,#0c1f38,#143050);">
+          <div class="port-card__badge">Featured Demo</div>
+          <div class="mock-browser">
+            <div class="mock-browser__bar"><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span><span class="mock-browser__dot"></span></div>
+            <div class="mock-browser__content">
+              <div class="mock-line mock-line--gold mock-line--w80"></div>
+              <div class="mock-line mock-line--w100"></div>
+              <div class="mock-line mock-line--w45"></div>
+              <div class="mock-grid-2"><span class="mock-block"></span><span class="mock-block"></span></div>
+              <div class="mock-line mock-line--w100"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-card__body">
+          <div class="port-card__cat">Real Estate &amp; Property</div>
+          <h3>Demo Project – Real Estate Website</h3>
+          <p>A premium 5-page concept for a real estate agent or builder. Features property listing layout, location highlights, agent profile, testimonials section framework, and a lead capture form. Built for high-value lead generation where a professional online presence directly impacts business revenue.</p>
+          <div class="port-tags">
+            <span class="port-tag">Web Design</span>
+            <span class="port-tag">Lead Generation</span>
+            <span class="port-tag">Growth Plan</span>
+            <span class="port-tag">Advanced SEO</span>
+          </div>
+          <a href="demos/prestige-properties/index.html" class="port-demo-btn" target="_blank" rel="noopener">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h3v3M13 3l-6 6M6 4H3v9h9v-3"/></svg>
+            View Live Demo
+          </a>
+
+    <!-- CTA below grid -->
+    <div style="text-align:center;margin-top:72px;padding:52px 40px;background:var(--c-surface);border-radius:var(--r-xl);" class="reveal">
+      <div class="sec-tag" style="margin:0 auto 18px;">Build Yours</div>
+      <h2 style="font-family:var(--f-display);font-size:clamp(24px,3.5vw,38px);color:var(--c-ink);margin-bottom:14px;">Ready for a Website Built for Your Business?</h2>
+      <p style="font-size:15px;color:var(--c-slate);max-width:500px;margin:0 auto 32px;line-height:1.75;">Tell us about your business and we'll design a site that reflects your brand and converts your visitors.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Start a Conversation</a>
+        <a href="pricing.html" class="btn btn--outline-ink btn--lg">View Pricing</a>
+      </div>
+    </div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2024 RNS Digital. All rights reserved.</span><span>Built for Local Business Growth in India</span></div>
-</div></footer><a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="wa-tooltip">Chat on WhatsApp</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
-<script src='js/script.js'></script>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="nav-logo__mark"><svg viewBox="0 0 20 20" fill="none"><path d="M4 4h5a3 3 0 013 3v0a3 3 0 01-3 3H4V4z" fill="white" opacity=".9"/><path d="M4 10h5l4 6H9L4 10z" fill="white"/></svg></div><span class="nav-logo__text">RNS <span>Digital</span></span></a>
+        <p>Professional web design and digital marketing for local businesses in India. Honest work. Honest pricing.</p>
+      </div>
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="why-us.html">Why Choose Us</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Our Plans</h4><ul><li><a href="basic.html">Basic Plan — ₹4,999</a></li><li><a href="growth.html">Growth Plan — ₹8,499</a></li><li><a href="pricing.html">Compare Plans</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 RNS Digital. All Rights Reserved.</p><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms</a></div></div>
+  </div>
+</footer>
+<a href="https://wa.me/917550268805" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="wa-fab__tip">Chat with us</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </body>
 </html>
