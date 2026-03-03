@@ -1,290 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RNS Digital pricing plans for local businesses. Basic website from ₹4,999. Standard Plan from ₹8,999. Transparent pricing, no hidden fees." />
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RNS Digital Pricing – Basic Plan ₹4,999 | Standard Plan ₹8,499. 1st Year All-Inclusive. Domain renewal only from 2nd year. No hidden charges."/>
   <title>Pricing – RNS Digital</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <style>
-    .pricing-support-card {
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 36px 40px;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    .support-options { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px; }
-    .support-option {
-      flex: 1; min-width: 200px;
-      background: var(--off-white);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      transition: var(--transition);
-    }
-    .support-option:hover { border-color: rgba(26,86,219,.25); }
-    .support-price { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--navy); margin: 6px 0 4px; }
-    .support-option p { font-size: .82rem; }
-    .faq-list { display: flex; flex-direction: column; gap: 0; }
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-      padding: 20px 0;
-    }
-    .faq-item:first-child { border-top: 1px solid var(--border); }
-    .faq-q {
-      font-family: var(--font-display);
-      font-size: .95rem;
-      font-weight: 600;
-      color: var(--navy);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-q svg { width: 16px; height: 16px; stroke: var(--text-muted); transition: var(--transition); flex-shrink: 0; }
-    .faq-a { font-size: .875rem; color: var(--text-muted); margin-top: 10px; display: none; }
-    .faq-item.open .faq-q svg { transform: rotate(45deg); }
-    .faq-item.open .faq-a { display: block; }
+    .faq-list{display:flex;flex-direction:column}
+    .faq-item{border-bottom:1px solid var(--border);padding:18px 0}
+    .faq-item:first-child{border-top:1px solid var(--border)}
+    .faq-q{font-family:var(--font-display);font-size:.93rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .faq-q svg{width:15px;height:15px;stroke:var(--text-muted);flex-shrink:0;transition:var(--transition)}
+    .faq-a{font-size:.86rem;color:var(--text-muted);margin-top:10px;display:none;line-height:1.7}
+    .faq-item.open .faq-q svg{transform:rotate(45deg)}
+    .faq-item.open .faq-a{display:block}
   </style>
 </head>
 <body>
 
+<div class="offer-banner"><p>Limited Launch Offer <span>First Few Clients Only</span> Basic: &#8377;4,999 &bull; Standard: &#8377;8,499 &bull; 1st Year All-Inclusive</p></div>
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="nav-logo">RNS <span>Digital</span></a>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="RNS Digital Logo" class="nav-logo-img"/>
+        <span>RNS <span class="logo-highlight">Digital</span></span>
+      </a>
       <ul class="nav-links">
-        <li><a href="why-us.html">Why Us</a></li>
-        <li><a href="pricing.html" class="active">Pricing</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="process.html">Process</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+        <li><a href="index.html">Home</a></li><li><a href="why-us.html">Why Us</a></li><li><a href="pricing.html" class="active">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:+917550268805" class="nav-cta nav-call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
+      Call Us</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 
 <section class="page-header">
-  <div class="container">
-    <div class="page-header-inner">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a>
-        <span>/</span>
-        <span>Pricing</span>
-      </div>
-      <h1>Simple, Honest Pricing</h1>
-      <p>Two focused plans designed for different stages of business growth. No hidden fees, no fine print surprises.</p>
-    </div>
-  </div>
+  <div class="container"><div class="page-header-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Pricing</span></div>
+    <h1>Simple, Honest Pricing</h1>
+    <p>Two focused plans. Both 1st year all-inclusive. No hidden fees. Domain renewal only from 2nd year.</p>
+  </div></div>
 </section>
 
-<!-- ── Pricing Cards ────────────────────── -->
+<!-- PRICING CARDS -->
 <section class="section" style="background:var(--white);">
   <div class="container">
+
+    <!-- Launch notice -->
+    <div class="notice-box mb-40 max-760" style="margin-left:auto;margin-right:auto;background:rgba(239,68,68,.04);border-color:rgba(239,68,68,.2);">
+      <svg viewBox="0 0 24 24" style="stroke:var(--red)!important;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <p><strong>Limited Launch Offer:</strong> These prices are for our first few clients only. We're building our reputation through quality work — once we have enough client websites, prices will increase. Lock in now.</p>
+    </div>
+
     <div class="pricing-grid">
 
-      <!-- Basic -->
+      <!-- BASIC -->
       <div class="pricing-card">
-        <div class="pricing-name">Basic Plan</div>
-        <div class="pricing-price"><sup>&#8377;</sup>4,999</div>
-        <p class="pricing-desc">One-time payment &bull; Ideal for establishing your online presence</p>
-        <ul class="pricing-features">
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Up to 5-page professional website
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Mobile responsive design
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Contact form + WhatsApp button
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Google Maps integration
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Basic on-page SEO setup
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Domain + 1-year hosting guidance
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            2 rounds of revision
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            14-day post-launch support
-          </li>
-        </ul>
-        <div class="pricing-note">
-          <strong>From 2nd Year:</strong> Domain renewal approx &#8377;1,000/year (paid directly to registrar — no middleman markup from us)
+        <div class="plan-name">Basic Business Plan</div>
+        <div class="price-original">Original Price: &#8377;5,999</div>
+        <div class="price-offer-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" width="11" height="11"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          <span>Launch Offer – Save &#8377;1,000</span>
         </div>
-        <a href="basic.html" class="btn btn-outline" style="width:100%;justify-content:center;">View Basic Plan Details</a>
+        <div class="price-main"><sup>&#8377;</sup>4,999</div>
+        <div class="price-note">1st Year All-Inclusive &bull; One-time payment</div>
+        <div class="plan-desc">Perfect for small shops &amp; startups who need a solid, professional online presence fast.</div>
+        <ul class="plan-features">
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Page Professional Website</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Mobile Responsive Design</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp Chat Integration</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Click-to-Call Button</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Contact Form</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Basic SEO Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Maps Integration</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain Included</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free Hosting Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free SSL Security</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>7 Days Delivery</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>7 Days Free Support</li>
+        </ul>
+        <div class="renewal-note"><strong>From 2nd Year:</strong> Domain renewal only – approx &#8377;1,000/year, paid directly to registrar. No hidden charges from us.</div>
+        <a href="basic.html" class="btn btn-outline" style="width:100%;justify-content:center;">Full Details &amp; Get Started</a>
       </div>
 
-      <!-- Growth -->
+      <!-- STANDARD -->
       <div class="pricing-card featured">
-        <div class="pricing-badge">Most Recommended</div>
-        <div class="pricing-name">Standard Plan</div>
-        <div class="pricing-price"><sup>&#8377;</sup>8,499</div>
-        <p class="pricing-desc">One-time payment &bull; Built to generate leads &amp; grow your business</p>
-        <ul class="pricing-features">
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Up to 10-page conversion-focused website
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Premium mobile-first design
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Lead capture forms + WhatsApp CTA
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Google Business Profile setup assistance
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Advanced on-page SEO (keywords, schema)
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Google Analytics integration
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Photo gallery / portfolio section
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Testimonials &amp; trust section
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            3 rounds of revision
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            30-day post-launch support
-          </li>
-          <li class="pricing-feature">
-            <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            Domain + 1-year hosting guidance
-          </li>
-        </ul>
-        <div class="pricing-note">
-          <strong>From 2nd Year:</strong> Domain renewal approx &#8377;1,000/year (paid directly to registrar — transparent, no markup)
+        <div class="pricing-badge-top">Most Recommended</div>
+        <div class="plan-name">Standard Business Plan</div>
+        <div class="price-original">Original Price: &#8377;9,999</div>
+        <div class="price-offer-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" width="11" height="11"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          <span>Launch Offer – Save &#8377;1,500</span>
         </div>
-        <a href="growth.html" class="btn btn-primary" style="width:100%;justify-content:center;">View Standard Plan Details</a>
+        <div class="price-main"><sup>&#8377;</sup>8,499</div>
+        <div class="price-note">1st Year All-Inclusive &bull; One-time payment</div>
+        <div class="plan-desc">For businesses serious about getting more inquiries through Google &amp; WhatsApp.</div>
+        <ul class="plan-features">
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Everything in Basic Plan, plus:</strong></li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>3–5 Page Professional Website</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced On-Page SEO</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Local Keyword Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Image &amp; Speed Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lead Tracking Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain Included</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>30 Days Free Support</li>
+        </ul>
+        <div class="renewal-note"><strong>From 2nd Year:</strong> Domain renewal only – approx &#8377;1,000/year, paid directly to registrar. No hidden charges from us.</div>
+        <a href="standard.html" class="btn btn-primary" style="width:100%;justify-content:center;">Full Details &amp; Get Started</a>
       </div>
 
     </div>
 
-    <!-- Compare Note -->
-    <div class="text-center mt-40">
-      <p style="font-size:.9rem;max-width:560px;margin:0 auto;">Not sure which plan to choose? <a href="contact.html" style="color:var(--blue);font-weight:600;">Message us on WhatsApp</a> — we'll recommend the right one based on your business type and goals.</p>
+    <!-- Simple summary -->
+    <div class="notice-box mt-40 max-760" style="margin-left:auto;margin-right:auto;">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p><strong>Simple explanation:</strong> First year full website + domain setup &#8377;4,999 (Basic) or &#8377;8,499 (Standard). From next year only domain renewal around &#8377;1,000. That's it. Clear. Confident. Professional.</p>
+    </div>
+
+    <div class="text-center mt-32">
+      <p style="font-size:.875rem;color:var(--text-muted);">Not sure which plan? <a href="contact.html" style="color:var(--blue);font-weight:600;">WhatsApp us</a> and we'll guide you based on your business type.</p>
     </div>
   </div>
 </section>
 
-<!-- ── Monthly Support ─────────────────── -->
+<!-- MONTHLY SUPPORT -->
 <section class="section-sm" style="background:var(--off-white);">
   <div class="container">
     <div class="text-center mb-32">
       <div class="section-label" style="justify-content:center;">Optional Add-On</div>
-      <h2>Monthly Website Support</h2>
-      <p class="mt-12 max-640">Once your website is live, you can opt into a monthly support plan for ongoing updates, security monitoring, and content changes.</p>
+      <h2>Monthly Support Plans</h2>
+      <p class="mt-12 max-640">Not compulsory — your website works perfectly without it. For clients who want ongoing updates and priority support.</p>
     </div>
-    <div class="pricing-support-card">
-      <h3 style="margin-bottom:4px;">Monthly Support Plans</h3>
-      <p style="font-size:.875rem;">Choose a plan that fits your maintenance needs.</p>
-      <div class="support-options">
-        <div class="support-option">
-          <div class="badge badge-navy">Essential</div>
-          <div class="support-price">&#8377;499<span style="font-size:.85rem;font-weight:400;color:var(--text-muted);">/mo</span></div>
-          <p>Up to 3 minor content updates per month. WhatsApp support.</p>
-        </div>
-        <div class="support-option" style="border-color:rgba(26,86,219,.3);">
-          <div class="badge badge-blue">Active</div>
-          <div class="support-price">&#8377;999<span style="font-size:.85rem;font-weight:400;color:var(--text-muted);">/mo</span></div>
-          <p>Up to 8 updates, performance monitoring, and priority response.</p>
+    <div class="support-grid">
+      <div class="support-card">
+        <div class="badge badge-navy">For Basic Clients</div>
+        <div class="support-price">&#8377;499 <span>/ month</span></div>
+        <p style="font-size:.85rem;margin-bottom:4px;">Cancel Anytime</p>
+        <div class="support-features">
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1 Content Update per month</div>
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Minor Changes</div>
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp Support</div>
         </div>
       </div>
-      <p style="font-size:.8rem;margin-top:16px;color:var(--text-muted);">Monthly support is entirely optional — your website works perfectly without it. These plans are for businesses that frequently update content or want hands-off maintenance.</p>
+      <div class="support-card" style="border-color:rgba(26,86,219,.3);">
+        <div class="badge badge-blue">For Standard Clients</div>
+        <div class="support-price">&#8377;999 <span>/ month</span></div>
+        <p style="font-size:.85rem;margin-bottom:4px;">Cancel Anytime</p>
+        <div class="support-features">
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2 Content Updates per month</div>
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Post Help</div>
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monthly SEO Check</div>
+          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priority Support</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── Domain Clarity ──────────────────── -->
+<!-- DOMAIN CLARITY -->
 <section class="section-sm" style="background:var(--white);">
   <div class="container max-760">
-    <div class="section-label" style="margin-bottom:20px;">Domain &amp; Hosting Clarity</div>
-    <h3 style="margin-bottom:16px;">What Happens After Year One?</h3>
-    <p>Both our plans include assistance setting up your domain and hosting for the first year. From the second year onwards, you'll renew your domain directly with the registrar (like GoDaddy or BigRock) at approximately <strong>&#8377;800 – &#8377;1,200/year</strong> depending on the extension (.in, .com, etc.). Hosting renewals vary by provider — we'll guide you through the options.</p>
-    <p style="margin-top:12px;">We do <strong>not</strong> add any markup on renewals. You pay the registrar directly, and we have no involvement in that transaction.</p>
+    <div class="section-label">Domain &amp; Hosting — Full Clarity</div>
+    <h3 style="margin:12px 0 16px;">What Happens After Year One?</h3>
+    <p>Both plans include your domain and hosting setup for the 1st year at no extra cost. From the 2nd year, you'll renew your domain directly with the registrar (like GoDaddy or BigRock) at approximately <strong>&#8377;800 – &#8377;1,200/year</strong>. Hosting renewals depend on provider.</p>
+    <p style="margin-top:10px;">We do not mark up these costs. You pay the registrar directly. We are not involved.</p>
     <div class="notice-box mt-24">
       <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <p><strong>No hidden ongoing fees from RNS Digital.</strong> After project delivery, the only recurring costs you'll have are your domain and hosting renewals — both paid directly to third-party providers at standard market rates.</p>
+      <p><strong>No recurring charges from RNS Digital.</strong> After project delivery, the only ongoing cost is your domain renewal (~&#8377;1,000/year) paid directly to the registrar. Zero hidden fees from us.</p>
     </div>
   </div>
 </section>
 
-<!-- ── FAQ ─────────────────────────────── -->
+<!-- FAQ -->
 <section class="section" style="background:var(--off-white);">
   <div class="container max-760">
     <div class="text-center mb-40">
       <div class="section-label" style="justify-content:center;">FAQ</div>
-      <h2>Common Pricing Questions</h2>
+      <h2>Common Questions</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">
-          Is the pricing fixed or will there be extra charges?
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">The plan price is fixed. The only additional costs would be domain and hosting (which you pay to third-party providers) and any optional monthly support you choose to add. We'll always tell you upfront if your requirement falls outside the plan scope.</div>
+        <div class="faq-q">Is the price fixed or will there be extra charges? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">The plan price is fixed. No extra charges from us. Domain and hosting from 2nd year are paid by you directly to the provider — we don't touch that money.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
-          Can I upgrade from Basic to Growth later?
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">Yes. If you start with the Basic plan and want to upgrade to Growth, you can do so at any point. You'll pay the difference and we'll add the Growth features to your existing website.</div>
+        <div class="faq-q">Can I upgrade from Basic to Standard later? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">Yes. You can upgrade any time by paying the difference (&#8377;3,500). We'll add all Standard features to your existing website.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
-          What payment methods do you accept?
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">We accept UPI, bank transfer (NEFT/RTGS/IMPS), and standard payment apps. Typically we take 50% upfront and 50% before the final handover.</div>
+        <div class="faq-q">What payment methods do you accept? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">UPI, bank transfer (NEFT/IMPS), and standard payment apps. We take 50% advance and 50% before final handover.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
-          Do you offer any payment in installments?
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">Our standard structure is 50% advance + 50% on delivery. For the Standard Plan, we can discuss a milestone-based payment schedule during the consultation.</div>
+        <div class="faq-q">How long does delivery take? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">Basic plan: 7 working days. Standard plan: 10–14 working days. Timeline starts once you share your content (logo, photos, text) and 50% advance is received.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">
-          What if I need more pages than the plan includes?
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        </div>
-        <div class="faq-a">Additional pages can be added at &#8377;1,500 per page for Basic or &#8377;2,000 per page for Growth. We'll quote this transparently before starting work.</div>
+        <div class="faq-q">Is the monthly support compulsory? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        <div class="faq-a">No. Monthly support is completely optional. Your website runs independently without it. Choose it only if you want regular updates or ongoing help.</div>
       </div>
     </div>
   </div>
@@ -294,47 +212,31 @@
   <div class="container">
     <div class="cta-inner">
       <div>
-        <h2 style="color:var(--white);">Still Have Questions About Pricing?</h2>
-        <p style="color:rgba(255,255,255,.6);margin-top:8px;">Reach out directly — we'll give you a clear, honest answer.</p>
+        <h2 style="color:var(--white);">Ready to Get Started?</h2>
+        <p style="color:rgba(255,255,255,.6);margin-top:8px;">WhatsApp us with your business name — we'll get the conversation going in minutes.</p>
       </div>
       <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary btn-lg">Talk to Us</a>
-        <a href="https://wa.me/917550268805" class="btn btn-white btn-lg" target="_blank">WhatsApp Us</a>
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        <a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website." class="btn btn-white btn-lg" target="_blank">WhatsApp Us</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="font-size:1.2rem;">RNS <span>Digital</span></a>
-        <p>Professional website design and digital growth services for local businesses across India.</p>
-      </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="basic.html">Basic Website</a></li><li><a href="growth.html">Standard Plan</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
-      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 RNS Digital.🩶 All rights reserved.</span>
-      <span>Built for Local Business Growth in India</span>
-    </div>
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><img src="images/logo.png" alt="RNS Digital" class="nav-logo-img"/><span>RNS <span class="logo-highlight">Digital</span></span></a><p>Professional website design for local businesses across India. Honest pricing. Real results.</p></div>
+    <div class="footer-col"><h5>Plans</h5><ul><li><a href="basic.html">Basic Plan – &#8377;4,999</a></li><li><a href="standard.html">Standard Plan – &#8377;8,499</a></li><li><a href="pricing.html">Full Pricing</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
+    <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
   </div>
-</footer>
+  <div class="footer-bottom"><span>&copy; 2024 RNS Digital. All rights reserved.</span><span>Built for Local Business Growth in India</span></div>
+</div></footer>
 
-<a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+<a href="https://wa.me/917550268805?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
 </a>
-
 <script src="js/script.js"></script>
-<script>
-  document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-q').addEventListener('click', () => {
-      item.classList.toggle('open');
-    });
-  });
-</script>
 </body>
 </html>
