@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rnsdigital.co.in/sitemap.xml
