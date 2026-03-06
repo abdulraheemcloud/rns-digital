@@ -4,19 +4,44 @@ document.addEventListener('DOMContentLoaded', function () {
     if (a.getAttribute('href') === page) a.classList.add('active');
   });
 
-  const toggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if (toggle && navLinks) {
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      const o = navLinks.classList.contains('open');
-      const spans = toggle.querySelectorAll('span');
-      spans[0].style.transform = o ? 'rotate(45deg) translate(5px,5px)' : '';
-      spans[1].style.opacity   = o ? '0' : '1';
-      spans[2].style.transform = o ? 'rotate(-45deg) translate(5px,-5px)' : '';
-    });
-    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-  }
+ const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+let overlay = document.querySelector('.nav-overlay');
+if (!overlay) {
+  overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  document.body.appendChild(overlay);
+}
+
+if (toggle && navLinks) {
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    overlay.classList.toggle('open');
+    const o = navLinks.classList.contains('open');
+    document.body.style.overflow = o ? 'hidden' : '';
+    const spans = toggle.querySelectorAll('span');
+    spans[0].style.transform = o ? 'rotate(45deg) translate(5px,5px)' : '';
+    spans[1].style.opacity   = o ? '0' : '1';
+    spans[2].style.transform = o ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  });
+
+  overlay.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    const spans = toggle.querySelectorAll('span');
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '1';
+    spans[2].style.transform = '';
+  });
+
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }));
+}
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
