@@ -1,7 +1,4 @@
-# Project Screenshots
-
 Add your website screenshots here as .webp files at 1200x800 pixels.
-
 Files needed:
 - restaurant.webp  (Spice Garden Restaurant demo)
 - dental.webp      (Smile Care Dental demo)
