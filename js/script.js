@@ -62,18 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── Contact Form ────────────────────────────────────── */
   const form = document.getElementById('contact-form');
   if (form) {
-    const btn         = form.querySelector('button[type="submit"]');
-    const originalHTML = btn ? btn.innerHTML : '';
+    const btn = form.querySelector('button[type="submit"]');
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
       if (btn) { btn.innerHTML = 'Sending…'; btn.disabled = true; }
-      setTimeout(() => {
-        const formFields  = document.getElementById('form-fields');
-        const formSuccess = document.getElementById('form-success');
-        if (formFields)  formFields.style.display  = 'none';
-        if (formSuccess) formSuccess.style.display  = 'block';
-        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
-      }, 1400);
     });
   }
 
@@ -97,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const btn = e.target.closest('.filter-btn');
       if (!btn) return;
 
-      // Update active state
       filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
