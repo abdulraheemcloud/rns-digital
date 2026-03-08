@@ -59,12 +59,36 @@ document.addEventListener('DOMContentLoaded', function () {
     io.observe(el);
   });
 
-  /* ── Contact Form ────────────────────────────────────── */
+  /* ── Contact Form (Formspree AJAX) ───────────────────── */
   const form = document.getElementById('contact-form');
   if (form) {
-    const btn = form.querySelector('button[type="submit"]');
+    const btn          = form.querySelector('button[type="submit"]');
+    const originalHTML = btn ? btn.innerHTML : '';
+
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
       if (btn) { btn.innerHTML = 'Sending…'; btn.disabled = true; }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
+        if (res.ok) {
+          const formFields  = document.getElementById('form-fields');
+          const formSuccess = document.getElementById('form-success');
+          if (formFields)  formFields.style.display  = 'none';
+          if (formSuccess) formSuccess.style.display  = 'block';
+        } else {
+          alert('Something went wrong. Please try WhatsApp or Email.');
+          if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+        }
+      })
+      .catch(() => {
+        alert('Network error. Please try WhatsApp or Email.');
+        if (btn) { btn.innerHTML = originalHTML; btn.disabled = false; }
+      });
     });
   }
 
@@ -80,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* ── Portfolio Filter Tabs ───────────────────────────── */
-  const filterBar   = document.getElementById('filterBar');
+  const filterBar     = document.getElementById('filterBar');
   const portfolioGrid = document.getElementById('portfolioGrid');
 
   if (filterBar && portfolioGrid) {
