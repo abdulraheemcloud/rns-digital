@@ -2,428 +2,611 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GJW0HL2ST"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8GJW0HL2ST');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GJW0HL2ST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8GJW0HL2ST');
+  </script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="RNS Digital Pricing – Basic Plan ₹4,999 | Standard Plan ₹7,999 | Premium Plan ₹9,999. 1st Year All-Inclusive. Domain renewal only from 2nd year. No hidden charges."/>
+  
+  <title>RNS Digital Pricing | Website Plans from ₹4,999 – Transparent & Affordable</title>
+  <meta name="description" content="RNS Digital pricing: Basic ₹4,999 | Standard ₹7,999 | Premium ₹9,999. All plans include 1st year domain + hosting + SSL. No hidden charges. Domain renewal only from 2nd year. For businesses across India."/>
+  <meta name="keywords" content="website pricing India, website cost, affordable website plans, website design pricing, RNS Digital pricing, website package, business website cost India, Google Ads pricing, digital marketing services India"/>
+  <meta name="author" content="RNS Digital"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://rnsdigital.co.in/pricing.html"/>
-  <title>Pricing – RNS Digital | Affordable Website Plans for Local Businesses</title>
+  
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://rnsdigital.co.in/pricing.html"/>
+  <meta property="og:title" content="RNS Digital Pricing | Website Plans from ₹4,999 – Transparent & Affordable"/>
+  <meta property="og:description" content="RNS Digital pricing: Basic ₹4,999 | Standard ₹7,999 | Premium ₹9,999. All plans include 1st year domain + hosting + SSL. No hidden charges."/>
+  <meta property="og:image" content="https://rnsdigital.co.in/images/hero/og-preview.webp"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="RNS Digital"/>
+  <meta property="og:locale" content="en_IN"/>
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="RNS Digital Pricing | Website Plans from ₹4,999 – Transparent & Affordable"/>
+  <meta name="twitter:description" content="RNS Digital pricing: Basic ₹4,999 | Standard ₹7,999 | Premium ₹9,999. All plans include 1st year domain + hosting + SSL. No hidden charges."/>
+  <meta name="twitter:image" content="https://rnsdigital.co.in/images/hero/og-preview.webp"/>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rnsdigital.co.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pricing",
+        "item": "https://rnsdigital.co.in/pricing.html"
+      }
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "RNS Digital Website Packages",
+    "description": "Professional website development plans for businesses across India. All plans include 1st year domain + hosting + SSL.",
+    "brand": {
+      "@type": "Brand",
+      "name": "RNS Digital"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Basic Plan",
+        "price": "4999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://rnsdigital.co.in/basic.html"
+      },
+      {
+        "@type": "Offer",
+        "name": "Standard Plan",
+        "price": "7999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://rnsdigital.co.in/standard.html"
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium Plan",
+        "price": "9999",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://rnsdigital.co.in/premium.html"
+      }
+    ]
+  }
+  </script>
+  
   <link rel="stylesheet" href="css/style.css"/>
-  <style>
-    /* Additional styles for 3-column pricing */
-    .pricing-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 32px;
-      justify-content: center;
-      margin-top: 32px;
-    }
-    .pricing-card {
-      background: var(--white);
-      border-radius: 28px;
-      padding: 28px 24px 32px;
-      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
-      transition: all 0.2s ease;
-      flex: 1;
-      min-width: 280px;
-      border: 1px solid var(--border);
-      position: relative;
-    }
-    .pricing-card.featured {
-      border-top: 4px solid var(--blue);
-      box-shadow: 0 25px 40px -14px rgba(26,86,219,0.2);
-      transform: scale(1.02);
-    }
-    .pricing-badge-top {
-      position: absolute;
-      top: -12px;
-      left: 24px;
-      background: var(--blue);
-      color: white;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 40px;
-      letter-spacing: 0.3px;
-    }
-    .plan-name {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-    .price-main {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin: 16px 0 4px;
-      letter-spacing: -0.5px;
-    }
-    .price-main sup {
-      font-size: 1.2rem;
-      font-weight: 600;
-      top: -0.8em;
-    }
-    .price-note {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-    }
-    .plan-desc {
-      font-size: 0.85rem;
-      color: var(--text-light);
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
-    }
-    .plan-features {
-      list-style: none;
-      margin: 20px 0 20px;
-      padding: 0;
-    }
-    .plan-feature {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.85rem;
-      margin-bottom: 12px;
-      color: var(--text-muted);
-    }
-    .plan-feature svg {
-      width: 18px;
-      height: 18px;
-      stroke: #10B981;
-      stroke-width: 2;
-      flex-shrink: 0;
-    }
-    .renewal-note {
-      background: #F8FAFE;
-      padding: 12px;
-      border-radius: 16px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin: 20px 0 20px;
-      text-align: center;
-    }
-    .support-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      justify-content: center;
-      margin-top: 32px;
-    }
-    .support-card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 24px;
-      text-align: center;
-      border: 1px solid var(--border);
-      flex: 1;
-      min-width: 220px;
-    }
-    .support-price {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin: 16px 0;
-    }
-    .support-price span {
-      font-size: 0.9rem;
-      font-weight: 400;
-    }
-    .badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 40px;
-      font-size: 0.7rem;
-      font-weight: 600;
-    }
-    .badge-navy { background: #EEF2FF; color: var(--navy); }
-    .badge-blue { background: #E0F2FE; color: var(--blue); }
-    .badge-amber { background: #FEF3C7; color: #D97706; }
-    .support-features {
-      margin-top: 20px;
-      text-align: left;
-    }
-    .support-feature {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.8rem;
-      margin-bottom: 10px;
-      color: var(--text-muted);
-    }
-    .support-feature svg {
-      width: 16px;
-      height: 16px;
-      stroke: #10B981;
-    }
-    .faq-list {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .faq-item {
-      background: var(--white);
-      border-radius: 16px;
-      margin-bottom: 12px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-    }
-    .faq-q {
-      padding: 16px 20px;
-      font-weight: 600;
-      color: var(--navy);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-q svg {
-      width: 18px;
-      height: 18px;
-      stroke: var(--blue);
-      transition: transform 0.2s;
-    }
-    .faq-item.active .faq-q svg {
-      transform: rotate(45deg);
-    }
-    .faq-a {
-      padding: 0 20px 16px 20px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      display: none;
-      line-height: 1.5;
-    }
-    .faq-item.active .faq-a {
-      display: block;
-    }
-    @media (max-width: 900px) {
-      .pricing-card.featured { transform: scale(1); }
-      .pricing-grid { gap: 24px; }
-    }
-  </style>
 </head>
 <body>
-<!-- offer-banner removed completely -->
 
-<nav class="navbar">
-  <div class="container"><div class="navbar-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="RNS Digital Logo" class="nav-logo-img"/>
-      <span>RNS <span class="logo-highlight">Digital</span></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="why-us.html">Why Us</a></li>
-      <li><a href="pricing.html" class="active">Pricing</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="process.html">Process</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="tel:+917550268805" class="nav-cta nav-call">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
-        Call Us</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div></div>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo" aria-label="RNS Digital Home">
+        <img src="images/logo.png" alt="RNS Digital Logo" class="nav-logo-img" width="36" height="36"/>
+        <span>RNS <span class="logo-highlight">Digital</span></span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="why-us.html" role="menuitem">Why Us</a></li>
+        <li role="none"><a href="pricing.html" class="active" role="menuitem" aria-current="page">Pricing</a></li>
+        <li role="none"><a href="portfolio.html" role="menuitem">Portfolio</a></li>
+        <li role="none"><a href="process.html" role="menuitem">Process</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        <li role="none"><a href="tel:+917550268805" class="nav-cta nav-call" role="menuitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5 19.79 19.79 0 0 1 1.86 5.18 2 2 0 0 1 3.83 3h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.71 2.81a2 2 0 0 1-.45 2.11L8.09 10.91A16 16 0 0 0 13 15.82l1.27-.92a2 2 0 0 1 2.11-.45c.91.35 1.85.58 2.81.71A2 2 0 0 1 22 16.92z"/></svg>
+          Call Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
 </nav>
 
-<section class="page-header">
-  <div class="container"><div class="page-header-inner">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Pricing</span></div>
-    <h1>Simple, Honest Pricing</h1>
-    <p>Three focused plans. All 1st year all-inclusive. No hidden fees. Domain renewal only from 2nd year.</p>
-  </div></div>
+<!-- PAGE HEADER -->
+<section class="page-header" aria-labelledby="page-header-heading">
+  <div class="container">
+    <div class="page-header-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Pricing</span>
+      </nav>
+      <h1 id="page-header-heading">Simple, Honest Pricing</h1>
+      <p>Three focused website plans. All 1st year all-inclusive. No hidden fees. Domain renewal only from 2nd year.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section" style="background:var(--white);">
+<!-- WEBSITE PRICING SECTION -->
+<section class="section" style="background:var(--white);" aria-labelledby="pricing-heading">
   <div class="container">
-    <!-- Launch offer notice box removed as requested -->
-    
+    <div class="text-center mb-48">
+      <div class="section-label">Website Packages</div>
+      <h2 id="pricing-heading">Transparent Website Pricing for Businesses Across India</h2>
+      <p class="mt-16 max-640">Choose the perfect plan for your business. All plans include 1st year domain + hosting + SSL. No hidden fees, ever.</p>
+    </div>
+
     <div class="pricing-grid">
       <!-- BASIC PLAN -->
-      <div class="pricing-card">
+      <div class="pricing-card" role="article" aria-label="Basic Plan - ₹4,999">
         <div class="plan-name">💎 BASIC</div>
         <div class="price-main"><sup>₹</sup>4,999</div>
         <div class="price-note">1st Year All-Inclusive • One-time payment</div>
-        <div class="plan-desc">Perfect for small shops &amp; startups who need a solid, professional online presence fast.</div>
+        <div class="plan-desc">Perfect for small businesses &amp; startups who need a professional online presence fast.</div>
         <ul class="plan-features">
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Page Professional Website</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Mobile Responsive Design</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp Chat + Click-to-Call</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Contact Form + Google Maps</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Basic SEO + Google Business Setup</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain + Hosting + SSL</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>7 Days Delivery • 7 Days Support</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>1-Page Professional Website</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Mobile Responsive Design</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>WhatsApp Chat + Click-to-Call</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Contact Form + Google Maps</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Basic SEO + Google Business Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain + Hosting + SSL</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>7 Days Delivery • 7 Days Support</li>
         </ul>
         <div class="renewal-note"><strong>From 2nd Year:</strong> Domain renewal only – approx ₹1,000/year. No hidden charges.</div>
-        <a href="basic.html" class="btn btn-outline" style="width:100%;justify-content:center;">Choose Basic</a>
+        <a href="basic.html" class="btn btn-outline btn-block" aria-label="Choose Basic Plan - ₹4,999">Choose Basic</a>
       </div>
 
-      <!-- STANDARD PLAN (Most Popular) -->
-      <div class="pricing-card featured">
+      <!-- STANDARD PLAN -->
+      <div class="pricing-card featured" role="article" aria-label="Standard Plan - ₹7,999 - Most Popular">
         <div class="pricing-badge-top">★ MOST POPULAR ★</div>
         <div class="plan-name">🔥 STANDARD</div>
         <div class="price-main"><sup>₹</sup>7,999</div>
         <div class="price-note">1st Year All-Inclusive • One-time payment</div>
         <div class="plan-desc">Best for businesses serious about getting more inquiries through Google &amp; WhatsApp.</div>
         <ul class="plan-features">
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Everything in Basic, plus:</strong></li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>3–5 Page Professional Website</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced On-Page SEO</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Local Keyword Optimization</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Image Gallery + Testimonials</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile Optimization</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lead Tracking Setup</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain FREE + Hosting + SSL</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>30 Days Free Support</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><strong>Everything in Basic, plus:</strong></li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>3–5 Page Professional Website</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Advanced On-Page SEO</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Local Keyword Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Image Gallery + Testimonials</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Google Business Profile Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Lead Tracking Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain FREE + Hosting + SSL</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>30 Days Free Support</li>
         </ul>
         <div class="renewal-note"><strong>From 2nd Year:</strong> Domain renewal only – approx ₹1,000/year. No hidden charges.</div>
-        <a href="standard.html" class="btn btn-primary" style="width:100%;justify-content:center;">Choose Standard</a>
+        <a href="standard.html" class="btn btn-primary btn-block" aria-label="Choose Standard Plan - ₹7,999 - Most Popular">Choose Standard</a>
       </div>
 
       <!-- PREMIUM PLAN -->
-      <div class="pricing-card">
+      <div class="pricing-card" role="article" aria-label="Premium Plan - ₹9,999">
         <div class="plan-name">👑 PREMIUM</div>
         <div class="price-main"><sup>₹</sup>9,999</div>
         <div class="price-note">1st Year All-Inclusive • One-time payment</div>
         <div class="plan-desc">For established businesses that want to dominate local search with advanced features.</div>
         <ul class="plan-features">
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><strong>Everything in Standard, plus:</strong></li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>5–7 Page Custom Website</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Blog Section (SEO Ready)</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Advanced SEO + Schema Markup</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Speed Optimization (Lighthouse 90+)</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Google Business Full Optimization</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lead Tracking &amp; Analytics Setup</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain FREE + Premium Hosting</li>
-          <li class="plan-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>60 Days Free Support</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><strong>Everything in Standard, plus:</strong></li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>5–7 Page Custom Website</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Blog Section (SEO Ready)</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Advanced SEO + Schema Markup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Speed Optimization (Lighthouse 90+)</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Google Business Full Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Lead Tracking &amp; Analytics Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>1-Year Domain FREE + Premium Hosting</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>60 Days Free Support</li>
         </ul>
         <div class="renewal-note"><strong>From 2nd Year:</strong> Domain renewal only – approx ₹1,000/year. No hidden charges.</div>
-        <a href="premium.html" class="btn btn-outline" style="width:100%;justify-content:center;">Choose Premium</a>
+        <a href="premium.html" class="btn btn-outline btn-block" aria-label="Choose Premium Plan - ₹9,999">Choose Premium</a>
       </div>
     </div>
 
-    <div class="notice-box mt-40 max-760" style="margin-left:auto;margin-right:auto;">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-      <p><strong>Simple explanation:</strong> First year full website + domain setup from ₹4,999. From next year only domain renewal around ₹1,000. That's it. Clear. Honest.</p>
-    </div>
     <div class="text-center mt-32">
-      <p style="font-size:.875rem;color:var(--text-muted);">Not sure which plan? <a href="contact.html" style="color:var(--blue);font-weight:600;">WhatsApp us</a> and we'll guide you.</p>
+      <p class="help-text">Not sure which plan fits your business? <a href="contact.html" class="link-blue">WhatsApp us</a> and we'll guide you.</p>
     </div>
   </div>
 </section>
 
-<!-- Optional Add-Ons -->
-<section class="section-sm" style="background:var(--off-white);">
+<!-- GOOGLE ADS PRICING SECTION -->
+<section class="section" style="background:var(--off-white);" aria-labelledby="ads-heading">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">Google Ads Services</div>
+      <h2 id="ads-heading">Professional Google Ads Setup &amp; Management</h2>
+      <p class="mt-16 max-640">Get your business in front of customers searching for your products or services. We handle everything from setup to ongoing optimization.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- BASIC SETUP -->
+      <div class="pricing-card" role="article" aria-label="Google Ads Basic Setup - Starting from ₹2,500">
+        <div class="plan-name">📊 BASIC SETUP</div>
+        <div class="pricing-badge-top badge-starting">STARTING</div>
+        <div class="price-main price-main-ads"><sup>₹</sup>2,500</div>
+        <div class="price-note">One-time Setup</div>
+        <div class="plan-desc">Get your first Google Ads campaign up and running. Perfect for small businesses testing paid advertising.</div>
+        <ul class="plan-features">
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Google Ads Account Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Billing Configuration</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Basic Keyword Research (Up to 15)</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>One Search Campaign</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Campaign Structure &amp; Location Targeting</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Initial Ad Creation</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Basic Conversion Tracking</li>
+        </ul>
+        <div class="renewal-note"><strong>Get started with Google Ads</strong> • Ad spend paid separately to Google</div>
+        <a href="contact.html?service=google-ads-basic" class="btn btn-outline btn-block" aria-label="Get Started with Google Ads Basic Setup - ₹2,500">Get Started</a>
+      </div>
+
+      <!-- PROFESSIONAL SETUP -->
+      <div class="pricing-card featured" role="article" aria-label="Google Ads Professional Setup - ₹10,000 - Most Popular">
+        <div class="plan-name">🚀 PROFESSIONAL SETUP</div>
+        <div class="pricing-badge-top badge-popular">★ MOST POPULAR ★</div>
+        <div class="price-main price-main-ads"><sup>₹</sup>10,000</div>
+        <div class="price-note">One-time Setup</div>
+        <div class="plan-desc">Complete Google Ads setup with advanced optimization. Get better results with a professionally managed campaign.</div>
+        <ul class="plan-features">
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Complete Account Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Competitor Analysis</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Advanced Keyword Research</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Multiple Campaign Structure</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Ad Groups &amp; Extensions</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Google Analytics 4 Integration</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Google Tag Manager Setup</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Advanced Conversion Tracking</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Landing Page Review</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Initial Campaign Optimization</li>
+          <li class="plan-feature"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>7 Days Launch Support</li>
+        </ul>
+        <div class="renewal-note"><strong>Professional setup for maximum ROI</strong> • Ad spend paid separately to Google</div>
+        <a href="contact.html?service=google-ads-professional" class="btn btn-primary btn-block" aria-label="Start Professional Google Ads Setup - ₹10,000">Start Project</a>
+      </div>
+    </div>
+
+    <!-- MONTHLY MANAGEMENT NOTE -->
+    <div class="addons-section" role="note" aria-label="Monthly Google Ads Management">
+      <h3 class="addons-title">📈 Monthly Google Ads Management</h3>
+      <div class="price-main price-management"><sup>₹</sup>3,000 <span class="price-management-suffix">/ month</span></div>
+      <p class="management-desc">Keep your campaigns optimized and performing at their best with ongoing management.</p>
+      <div class="addons-grid">
+        <div class="addon-item">📊 Weekly Optimization</div>
+        <div class="addon-item">🔍 Keyword Monitoring</div>
+        <div class="addon-item">💰 Bid Adjustments</div>
+        <div class="addon-item">📈 Performance Reports</div>
+        <div class="addon-item">🎯 Conversion Improvements</div>
+      </div>
+      <div class="management-cta">
+        <a href="contact.html?service=google-ads-management" class="btn btn-outline" aria-label="Enquire about Google Ads Management - ₹3,000/month">Enquire About Management</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-32">
+      <p class="help-text">Not sure which Google Ads service fits your business? <a href="contact.html" class="link-blue">Talk to us</a> — we'll guide you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITIONAL DIGITAL SERVICES -->
+<section class="section" style="background:var(--white);" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">Additional Digital Services</div>
+      <h2 id="services-heading">Expand Your Business With Our Complete Digital Solutions</h2>
+      <p class="mt-16 max-640">Beyond websites, we offer professional digital services to help your business grow online.</p>
+    </div>
+
+    <!-- Category 1: Digital Marketing -->
+    <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:16px;text-align:center;">📊 Digital Marketing</h3>
+    <div class="service-cards-grid">
+      <div class="service-card">
+        <div class="service-icon">📍</div>
+        <div class="service-title">Google Business Profile Setup</div>
+        <div class="service-price">₹1,000 <span>starting</span></div>
+        <div class="service-desc">Complete setup of your Google Business Profile to appear on Google Maps and local search.</div>
+        <a href="contact.html?service=google-business-setup" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <div class="service-title">Google Business Profile Optimization</div>
+        <div class="service-price">₹2,500 <span>starting</span></div>
+        <div class="service-desc">Full optimization with photos, posts, reviews management, and category optimization.</div>
+        <a href="contact.html?service=google-business-optimization" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-title">Basic SEO</div>
+        <div class="service-price">₹2,999 <span>starting</span></div>
+        <div class="service-desc">On-page SEO, meta tags, keyword research, and basic content optimization.</div>
+        <a href="contact.html?service=basic-seo" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Advanced SEO</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Comprehensive SEO strategy including technical SEO, content strategy, link building, and monthly reporting.</div>
+        <a href="contact.html?service=advanced-seo" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📍</div>
+        <div class="service-title">Local SEO</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Target local customers with optimized Google Business Profile, local citations, and location-specific content.</div>
+        <a href="contact.html?service=local-seo" class="btn btn-outline">Enquire Now</a>
+      </div>
+    </div>
+
+    <!-- Category 2: Business Solutions -->
+    <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);margin:48px 0 16px;text-align:center;">🤖 Business Solutions</h3>
+    <div class="service-cards-grid">
+      <div class="service-card">
+        <div class="service-icon">💬</div>
+        <div class="service-title">AI Chatbot Integration</div>
+        <div class="service-price">₹4,999 <span>starting</span></div>
+        <div class="service-desc">Intelligent AI-powered chatbot for your website to handle customer queries and generate leads 24/7.</div>
+        <a href="contact.html?service=ai-chatbot" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-title">WhatsApp Automation</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Automated WhatsApp Business solutions for customer engagement, order management, and marketing campaigns.</div>
+        <a href="contact.html?service=whatsapp-automation" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Custom Software Development</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Tailored software solutions including ERP, CRM, inventory management, and business automation systems.</div>
+        <a href="contact.html?service=custom-software" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-title">CRM Solutions</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Custom CRM solutions to manage your leads, customers, and sales pipeline efficiently.</div>
+        <a href="contact.html?service=crm-solutions" class="btn btn-outline">Enquire Now</a>
+      </div>
+    </div>
+
+    <!-- Category 3: Cloud & Technical Services -->
+    <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);margin:48px 0 16px;text-align:center;">☁️ Cloud &amp; Technical Services</h3>
+    <div class="service-cards-grid">
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <div class="service-title">AWS Cloud Solutions</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Cloud infrastructure, deployment, and management services on AWS for scalable and secure operations.</div>
+        <a href="contact.html?service=aws-cloud" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <div class="service-title">Website Migration</div>
+        <div class="service-price">₹2,500 <span>starting</span></div>
+        <div class="service-desc">Seamless migration of your website to a new hosting provider or platform with zero downtime.</div>
+        <a href="contact.html?service=website-migration" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📧</div>
+        <div class="service-title">Business Email Setup</div>
+        <div class="service-price">₹500 <span>starting</span></div>
+        <div class="service-desc">Professional email setup with your domain name (your@business.com) for a professional appearance.</div>
+        <a href="contact.html?service=business-email" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔒</div>
+        <div class="service-title">Website Security</div>
+        <div class="service-price">₹1,500 <span>starting</span></div>
+        <div class="service-desc">Security hardening, malware scanning, firewall setup, and regular security audits for your website.</div>
+        <a href="contact.html?service=website-security" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <div class="service-title">Performance Optimization</div>
+        <div class="service-price">₹2,500 <span>starting</span></div>
+        <div class="service-desc">Speed optimization, Core Web Vitals improvement, and caching configuration for better Lighthouse scores.</div>
+        <a href="contact.html?service=performance-optimization" class="btn btn-outline">Enquire Now</a>
+      </div>
+    </div>
+
+    <!-- Category 4: Support & Maintenance -->
+    <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--navy);margin:48px 0 16px;text-align:center;">🛠️ Support &amp; Maintenance</h3>
+    <div class="service-cards-grid">
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <div class="service-title">Website Maintenance</div>
+        <div class="service-price">₹999 <span>/ month</span></div>
+        <div class="service-desc">Regular updates, security patches, backups, and performance monitoring for your website.</div>
+        <a href="contact.html?service=website-maintenance" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✍️</div>
+        <div class="service-title">Content Updates</div>
+        <div class="service-price">₹500 <span>starting</span></div>
+        <div class="service-desc">Professional content updates for your website including text changes, image updates, and page additions.</div>
+        <a href="contact.html?service=content-updates" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Domain Registration</div>
+        <div class="service-price">At <span>Actual Cost</span></div>
+        <div class="service-desc">Domain registration at actual cost with no markup. We help you get your preferred domain name.</div>
+        <a href="contact.html?service=domain-registration" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <div class="service-title">Hosting</div>
+        <div class="service-price">Custom <span>Quote</span></div>
+        <div class="service-desc">Reliable hosting solutions tailored to your website's requirements with excellent uptime and support.</div>
+        <a href="contact.html?service=hosting" class="btn btn-outline">Enquire Now</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎯</div>
+        <div class="service-title">Technical Support</div>
+        <div class="service-price">Included <span>as per selected plan</span></div>
+        <div class="service-desc">Technical support is included with your website plan. Additional support packages available on request.</div>
+        <a href="contact.html?service=technical-support" class="btn btn-outline">Enquire Now</a>
+      </div>
+    </div>
+
+    <!-- Pricing Disclaimer -->
+    <div class="pricing-disclaimer" role="note">
+      <strong>📋 Pricing Note:</strong> Prices shown are starting prices for standard requirements. Final quotation may vary depending on project scope, custom features, integrations and third-party services. Google Ads advertising budget is paid directly to Google and is not included in our service charges.
+    </div>
+
+    <div class="text-center mt-32">
+      <p class="help-text">Need a custom solution? <a href="contact.html" class="link-blue">Contact us</a> for a free consultation and custom quote.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OPTIONAL ADD-ONS -->
+<section class="section-sm" style="background:var(--off-white);" aria-labelledby="addons-heading">
   <div class="container">
     <div class="text-center mb-32">
-      <div class="section-label" style="justify-content:center;">Optional Add-Ons</div>
-      <h2>Customize Your Plan</h2>
+      <div class="section-label">Optional Add-Ons</div>
+      <h2 id="addons-heading">Customize Your Website Plan</h2>
       <p class="mt-12 max-640">Not compulsory — add these only if you need them.</p>
     </div>
-    <div class="support-grid">
-      <div class="support-card">
-        <div class="badge badge-navy">📄 Page Add-Ons</div>
-        <div class="support-price">₹500 <span>/ extra page</span></div>
-        <div class="support-features">
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Additional custom page</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Fully responsive</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>SEO optimized</div>
-        </div>
-      </div>
-      <div class="support-card">
-        <div class="badge badge-blue">🎨 Logo Design</div>
-        <div class="support-price">₹1,000 <span>/ one-time</span></div>
-        <div class="support-features">
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Professional logo design</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>3 concepts to choose from</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>High-res files included</div>
-        </div>
-      </div>
-      <div class="support-card">
-        <div class="badge badge-amber">✍️ SEO Content Writing</div>
-        <div class="support-price">₹1,500 <span>/ one-time</span></div>
-        <div class="support-features">
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Professional content for 5 pages</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Keyword optimized</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2 rounds of revisions</div>
-        </div>
-      </div>
-      <div class="support-card">
-        <div class="badge badge-navy">🛠 Monthly Maintenance</div>
-        <div class="support-price">₹999 <span>/ month</span></div>
-        <div class="support-features">
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>2 content updates per month</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priority WhatsApp support</div>
-          <div class="support-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monthly SEO check</div>
-        </div>
-      </div>
+    <div class="addons-grid">
+      <div class="addon-item">📄 Extra Page – ₹500</div>
+      <div class="addon-item">🎨 Logo Design – ₹1,000</div>
+      <div class="addon-item">✍️ Professional SEO Content Writing – ₹1,500</div>
+      <div class="addon-item">🛠 Monthly Website Maintenance – ₹999</div>
     </div>
     <div class="text-center mt-32">
-      <p style="font-size: 0.8rem; color: var(--text-muted);">💳 Payment Terms: 50% Advance • 50% After Delivery</p>
-      <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 8px;">✔ Free Included: Hosting Setup, SSL Security, Basic Technical Support</p>
+      <p class="payment-terms">💳 Payment Terms: 50% Advance • 50% After Delivery</p>
+      <p class="free-included">✔ Free Included: Hosting Setup, SSL Security, Basic Technical Support</p>
     </div>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="section" style="background:var(--white);">
+<!-- FAQ SECTION -->
+<section class="section" style="background:var(--white);" aria-labelledby="faq-heading">
   <div class="container max-760">
     <div class="text-center mb-40">
-      <div class="section-label" style="justify-content:center;">FAQ</div>
-      <h2>Common Questions</h2>
+      <div class="section-label">FAQ</div>
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
     </div>
-    <div class="faq-list">
-      <div class="faq-item"><div class="faq-q">Is the price fixed or will there be extra charges? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">The plan price is fixed. No extra charges from us. Domain and hosting from 2nd year are paid by you directly to the provider (approx ₹1,000/year).</div></div>
-      <div class="faq-item"><div class="faq-q">Can I upgrade from Basic to Standard or Premium later? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">Yes. You can upgrade any time by paying the difference. We'll add all features from your new plan to your existing website.</div></div>
-      <div class="faq-item"><div class="faq-q">What payment methods do you accept? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">UPI, bank transfer (NEFT/IMPS), and standard payment apps. We take 50% advance and 50% before final handover.</div></div>
-      <div class="faq-item"><div class="faq-q">How long does delivery take? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">Basic plan: 7 working days. Standard: 10–14 days. Premium: 14–18 days. Timeline starts once you share your content and 50% advance is received.</div></div>
-      <div class="faq-item"><div class="faq-q">Do I own the domain and website? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">Yes! Domain is registered in YOUR business name. You get full ownership. We just help you set it up.</div></div>
-      <div class="faq-item"><div class="faq-q">Is monthly support compulsory? <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a">No. Monthly support is completely optional. Your website runs independently without it.</div></div>
+    <div class="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          Is the price fixed or will there be extra charges?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">The plan price is fixed. No extra charges from us. Domain and hosting from 2nd year are paid by you directly to the provider (approx ₹1,000/year).</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          Can I upgrade from Basic to Standard or Premium later?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Yes. You can upgrade any time by paying the difference. We'll add all features from your new plan to your existing website.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          What payment methods do you accept?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">UPI, bank transfer (NEFT/IMPS), and standard payment apps. We take 50% advance and 50% before final handover.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          How long does delivery take?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Basic plan: 7 working days. Standard: 10–14 days. Premium: 14–18 days. Timeline starts once you share your content and 50% advance is received.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          Do I own the domain and website?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">Yes! Domain is registered in YOUR business name. You get full ownership. We just help you set it up.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          Is monthly support compulsory?
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="faq-a">No. Monthly support is completely optional. Your website runs independently without it.</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section cta-section">
-  <div class="container"><div class="cta-inner">
-    <div><h2 style="color:var(--white);">Ready to Get Started?</h2><p style="color:rgba(255,255,255,.6);margin-top:8px;">WhatsApp us with your business name — we'll get the conversation going in minutes.</p></div>
-    <div class="cta-actions">
-      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-      <a href="https://wa.me/917550268805?text=Hi%2C%20I'm%20interested%20in%20a%20website%20for%20my%20business." class="btn btn-white btn-lg" target="_blank">WhatsApp Us</a>
+<!-- FINAL CTA -->
+<section class="section cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2 id="cta-heading" class="cta-title">Ready to Get Started?</h2>
+        <p class="cta-desc">WhatsApp us with your business name — we'll get the conversation going in minutes.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        <a href="https://wa.me/917550268805?text=Hi%2C%20I'm%20interested%20in%20a%20website%20for%20my%20business." class="btn btn-white btn-lg" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
     </div>
-  </div></div>
+  </div>
 </section>
 
-<footer class="footer"><div class="container">
-  <div class="footer-grid">
-    <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><img src="images/logo.png" alt="RNS Digital" class="nav-logo-img"/><span>RNS <span class="logo-highlight">Digital</span></span></a><p>Professional website design for local businesses across India. Honest pricing. Real results.</p></div>
-    <div class="footer-col"><h5>Plans</h5><ul><li><a href="basic.html">Basic Plan – ₹4,999</a></li><li><a href="standard.html">Standard Plan – ₹7,999</a></li><li><a href="premium.html">Premium Plan – ₹9,999</a></li></ul></div>
-    <div class="footer-col"><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="process.html">Our Process</a></li></ul></div>
-    <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Get in Touch</a></li><li><a href="https://wa.me/917550268805" target="_blank">WhatsApp Us</a></li><li><a href="mailto:rnsdigital.co.in@gmail.com">rnsdigital.co.in@gmail.com</a></li></ul></div>
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo footer-logo" aria-label="RNS Digital Home">
+          <img src="images/logo.png" alt="RNS Digital" class="nav-logo-img" width="32" height="32"/>
+          <span>RNS <span class="logo-highlight">Digital</span></span>
+        </a>
+        <p>Professional digital solutions for businesses across India — Web Development, E-Commerce, Mobile Apps, AI, Automation, Cloud &amp; Digital Marketing. Honest pricing. Real results.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Plans</h5>
+        <ul>
+          <li><a href="basic.html">Basic – ₹4,999</a></li>
+          <li><a href="standard.html">Standard – ₹7,999</a></li>
+          <li><a href="premium.html">Premium – ₹9,999</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="index.html#services-heading">Web Development</a></li>
+          <li><a href="index.html#services-heading">E-Commerce</a></li>
+          <li><a href="index.html#services-heading">Mobile Apps</a></li>
+          <li><a href="index.html#services-heading">AI Solutions</a></li>
+          <li><a href="index.html#services-heading">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 RNS Digital. All rights reserved. Web Development, E-Commerce, Mobile Apps, AI, Automation, Cloud &amp; Digital Marketing for businesses across India.</span>
+    </div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2026 RNS Digital. All rights reserved.</span><span>Built for Local Business Growth in India</span></div>
-</div></footer>
+</footer>
 
-<a href="https://wa.me/917550268805?text=Hi%2C%20I'm%20interested%20in%20a%20website%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="wa-tooltip">Chat on WhatsApp</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+<a href="https://wa.me/917550268805?text=Hi%2C%20I'm%20interested%20in%20digital%20solutions%20for%20my%20business." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
 
-<script>
-// FAQ toggle functionality
-document.querySelectorAll('.faq-q').forEach(question => {
-  question.addEventListener('click', () => {
-    const parent = question.parentElement;
-    parent.classList.toggle('active');
-  });
-});
-</script>
 <script src="js/script.js"></script>
 </body>
 </html>
-```
